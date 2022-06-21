@@ -48,6 +48,14 @@ export default function AboutVocation() {
         <Picker.Item label="Hairdressing" />  
         <Picker.Item label="Shoe Making" />
         <Picker.Item label="Hairdressing" />
+        <Picker.Item label="Web Development"/>
+        <Picker.Item label="App Development"/>
+        <Picker.Item label="Data Science"/>
+        <Picker.Item label="UI/UX Designing"/>
+        <Picker.Item label="Fashion Desiging"/>
+        <Picker.Item label="Baking and decoration"/>
+        <Picker.Item label="Tie and Die" />
+        <Picker.Item label="Barbing"/>
       </Picker>
 
       <Picker
@@ -58,9 +66,11 @@ export default function AboutVocation() {
           setSelectedLanguage(itemValue)
         }>
         <Picker.Item label="Categories"  />
-        <Picker.Item label="Hairdressing"  />  
+        <Picker.Item label="Baking"  />  
         <Picker.Item label="Shoe Making"  />
         <Picker.Item label="Hairdressing"  />
+        <Picker.Item label="Fashion Designing"/>
+        <Picker.Item label="Technology"/>
       </Picker>
 
       <Picker

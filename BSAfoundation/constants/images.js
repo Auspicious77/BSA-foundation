@@ -23,11 +23,15 @@ export const ilajepictures_7 = require("../assets/images/ilajepictures_7.jpg");
 export const bannerbg = require("../assets/images/banner_bg.jpg");
 export const official1 = require("../assets/images/official1.jpg");
 export const official2 = require("../assets/images/official2.jpg");
-export const official3 = require("../assets/images/official3.jpg");
-export const a1 = require("../assets/images/1.jpg");
-export const a2 = require("../assets/images/2.jpg");
-export const a3 = require("../assets/images/3.jpg");
-export const a4 = require("../assets/images/4.jpg");
+export const official3 = require("../assets/images/OSP_4.jpg");
+export const a1 = require("../assets/images/bake.jpg");
+export const a2 = require("../assets/images/tie1.jpg");
+export const a3 = require("../assets/images/tailor1.jpg");
+export const a4 = require("../assets/images/soft2.jpg");
+export const a5 = require("../assets/images/barb2.jpg");
+export const a6 = require("../assets/images/hair.jpg");
+export const a7 = require("../assets/images/data.jpg");
+export const a8 = require("../assets/images/garment.jpg");
 
 
 export const datascience = require("../assets/images/datascience.png");
@@ -36,7 +40,7 @@ export const mobile = require("../assets/images/mobile.png");
 export const graphics = require("../assets/images/graphics.png");
 
 export default {
-    a1,a2,a3,a4,
+    a1,a2,a3,a4,a5,a6,a7,a8,
     datascience,
     digitalmarketing
     ,mobile,

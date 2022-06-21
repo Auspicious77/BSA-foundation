@@ -10,15 +10,15 @@ export default function Whatwedo() {
                 <View style={{ height: 150, borderBottomLeftRadius: 20, borderBottomRightRadius: 20 }}>
                     <ImageBackground source={images.official3} resizeMode="cover" style={styles.image}>
                         <View style={{ backgroundColor: "#000000c2", height: 150, justifyContent: 'center' }}>
-                            <Text style={styles.text1}>...providing a leverage to Sustainable Development Goals</Text>
+                            <Text style={styles.text1}>...to raise young men ang women to be responsible and productive in their respective endeavours</Text>
                         </View>
                     </ImageBackground>
                 </View>
 
                 <View style={styles.ImageText}>
-                    <Text style={styles.Ondo}>Ondo State Oil Producing Areas Development Commission, OSOPADEC, is an interventionist agency established by the Laws of Ondo State CAP. 106 to receive and administer exclusively, 40% of the 13% oil derivation fund accruing to Ondo State Government for the development of the oil producing areas (Ilaje and Ese-Odo) of the State.</Text>
+                    <Text style={styles.Ondo}>Booda Sunday Adeyemo (BSA) Foundation, A nonprofit organization to promote youth, teenagers' development, and self-discovery. As an organization, we belive that tennagers and youths are the tipping points in changing our world</Text>
 
-                    <Text style={styles.In}>In order to provide a leverage for Sustainable Development Goals and foster Community Economic Development Initiatives within mandate communities the Commission facilitates, executes and implements strategic Programmes and Projects such as:</Text>
+                    {/* <Text style={styles.In}>In order to provide a leverage for Sustainable Development Goals and foster Community Economic Development Initiatives within mandate communities the Commission facilitates, executes and implements strategic Programmes and Projects such as:</Text> */}
                 </View>
 
                 {/* Educational Programmes */}

@@ -22,12 +22,12 @@ export default function ContactUs() {
             {/* Contact OSOPADEC */}
             <View style={styles.background}>
                 <TouchableOpacity style={styles.Button} onPress={() => navigation.navigate('ContactUs')}>
-                    <Text style={styles.About}>Contact OSOPADEC</Text>
+                    <Text style={styles.About}>Contact BSA</Text>
                 </TouchableOpacity>
                 <View style={{ flexDirection: 'column', alignItems: 'center', marginHorizontal: 9 }}>
-                    <Text style={{ fontSize: 17, textAlign: 'center' }}>Ondo State Oil Producing Areas Development Commission Headquaters, Obaile, Ondo State</Text>
+                    <Text style={{ fontSize: 17, textAlign: 'center' }}>Ogbomoso Soputh Local Government, Ogbomoso, Oyo state</Text>
 
-                    <Text style={{ fontSize: 16, color: '#000' }}>Email: info@osopadec.gov.ng</Text>
+                    <Text style={{ fontSize: 16, color: '#000' }}>Email: info@BSA.gov.ng</Text>
 
                     <Text style={{ fontSize: 16, color: '#000' }}>+234 706 181 3135</Text>
 
@@ -46,10 +46,11 @@ export default function ContactUs() {
                         <Text style={styles.About}>Follow Us:</Text>
                     </TouchableOpacity>
                     <View style={{ flexDirection: 'row' }}>
-                        <TouchableOpacity><Image source={require("../../assets/icons/twitter.png")} style={{ marginRight: 10, width: 30, height: 30 }} /></TouchableOpacity>
                         <TouchableOpacity><Image source={require("../../assets/icons/facebook.png")} style={{ marginRight: 10, width: 30, height: 30 }} /></TouchableOpacity>
-                        <TouchableOpacity><Image source={require("../../assets/icons/instagram.png")} style={{ marginRight: 10, width: 30, height: 30 }} /></TouchableOpacity>
+                        <TouchableOpacity><Image source={require("../../assets/icons/twitter.png")} style={{ marginRight: 10, width: 30, height: 30 }} /></TouchableOpacity>
                         <TouchableOpacity><Image source={require("../../assets/icons/gmail.png")} style={{ marginRight: 10, width: 30, height: 30 }} /></TouchableOpacity>
+                        <TouchableOpacity><Image source={require("../../assets/icons/instagram.png")} style={{ marginRight: 10, width: 30, height: 30 }} /></TouchableOpacity>
+                        
                     </View>
                 </View>
             </View>
@@ -61,7 +62,7 @@ export default function ContactUs() {
                     style={styles.input}
                     onChangeText={onChangeFullName}
                     value={FullName}
-                    placeholder="Full Name"
+                    placeholder="Full-Name"
                     keyboardType="default"
                 />
             </View>
@@ -71,7 +72,7 @@ export default function ContactUs() {
                     style={styles.input}
                     onChangeText={onChangeEmail}
                     value={Email}
-                    placeholder="E-mail"
+                    placeholder="youremail@gmail.com"
                     keyboardType="email-address"
                 />
             </View>

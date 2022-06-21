@@ -7,6 +7,7 @@ import ContactUs from './ContactUs';
 import Index from './Index';
 // import Sponsorship from './Sponsorship';
 import Whatwedo from './Whatwedo';
+import Administration from './Administration';
 
 
 
@@ -76,6 +77,18 @@ export default function HomeStack() {
         },
         }}
       />
+
+<Stack.Screen
+        name="Administration"
+        component={Administration}
+        options={{
+          headerTintColor: 'white',
+          headerStyle: { backgroundColor: '#4266f5',
+        
+        },
+        }}
+      />
+
 
   
     </Stack.Navigator>
