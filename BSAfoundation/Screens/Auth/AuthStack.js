@@ -6,6 +6,8 @@ import ForgetPassword from './ForgetPassword';
 import Login from './Login';
 import SignUp from './SignUp';
 import Index from './Index';
+import BottomStack from '../BottomStack';
+
 
 
 
@@ -22,7 +24,7 @@ export default function AuthStack() {
             headerStyle: {  backgroundColor: '#4266f5',
           
         },
-        title:'Auth Index',
+        title:'Login',
           headerTitleStyle: {
             justifyContent:'center',
             alignSelf:'center',
@@ -43,6 +45,14 @@ export default function AuthStack() {
             justifyContent:'center',
             alignSelf:'center',
             paddingLeft:'32%'}
+        }}
+      />
+      <Stack.Screen
+        name="BottomStack"
+        component={BottomStack}
+        options={{
+          headerShown:false,
+          
         }}
       />
 

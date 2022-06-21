@@ -9,6 +9,7 @@ import Index from './Index';
 import Whatwedo from './Whatwedo';
 
 
+
 const Stack = createStackNavigator();
 
 export default function HomeStack() {
@@ -78,7 +79,14 @@ export default function HomeStack() {
 
   
     </Stack.Navigator>
+    
   );
 }
+
+
+
+ 
+
+;
 
 

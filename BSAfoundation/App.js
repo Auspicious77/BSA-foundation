@@ -7,7 +7,9 @@ import { NavigationContainer, DefaultTheme } from "@react-navigation/native";
 // import { PlantDetail } from "./screens/";
 // extra screens
 // import Tabs from "./navigation/tabs";
-import BottomStack from './Screens/BottomStack';
+
+
+import AuthStack from './Screens/Auth/AuthStack';
 
 const theme = {
     ...DefaultTheme,
@@ -22,7 +24,10 @@ const Stack = createStackNavigator();
 export default function App() {
     return (
       <NavigationContainer>
-        <BottomStack />
+     <AuthStack/>
+     
+        
+      
       </NavigationContainer>
     );
   }
