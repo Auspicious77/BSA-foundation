@@ -38,15 +38,21 @@ export default function Index({navigation}) {
   const renderItem = ({ item,  }) => {
     // console.log(item)
     return (
-      <TouchableOpacity onPress={()=>navigation.navigate(item.url)}>
-        <View style={styles.card}>
-          <Image source={item.img}
-            style={{ width: 70, height: 70 }}
-          />
-          <Text>{item.title}</Text>
+  
+      
+      <View>
+    
+        <TouchableOpacity onPress={()=>navigation.navigate(item.url)}>
+      
+      <View style={styles.card}>
+        <Image source={item.img}
+          style={{ width: 70, height: 70 }}
+        />
+        <Text>{item.title}</Text>
 
-        </View>
-      </TouchableOpacity>
+      </View>
+    </TouchableOpacity>
+      </View>
 
     );
   };
@@ -54,6 +60,7 @@ export default function Index({navigation}) {
   return (
     <View style={styles.container}>
 
+      <View style={{alignItems:"center"}}>
       <FlatList
         data={DATA}
         renderItem={renderItem}
@@ -61,6 +68,7 @@ export default function Index({navigation}) {
         extraData={selectedId}
         numColumns={2}
       />
+      </View>
 
     </View>
   );

@@ -1,11 +1,12 @@
 import * as React from 'react';
-import { View, TextInput, StyleSheet, TouchableOpacity, Image, Text } from 'react-native'
+import { View, TextInput, StyleSheet, TouchableOpacity, Image, Text,ScrollView } from 'react-native'
+
 
 export default function Login({navigation}) {
   const [text, setText] = React.useState('');
 
   return (
-    <View style={styles.container}>
+    <ScrollView style={styles.container}>
 
       <View style={{ alignItems: 'center', paddingVertical: 25 }}>
         <Image
@@ -18,19 +19,21 @@ export default function Login({navigation}) {
       <TextInput
         style={styles.input}
         placeholder=' Enter Your Community ID'
+        placeholderTextColor="#808080"
       />
 
       <TextInput
         style={styles.input}
         placeholder=' Enter Your Password'
         secureTextEntry
+        placeholderTextColor="#808080"
       />
 
 <TouchableOpacity onPress={() => navigation.navigate('ForgetPassword')}>
         <Text style={styles.forgot}>forgot password?</Text>
       </TouchableOpacity>
       <TouchableOpacity style={styles.loginButton}
-      onPress={() => navigation.navigate('Login')}>
+      onPress={() => navigation.navigate('BottomStack')}>
         <View>
           <Text style={styles.logintext}>LOGIN</Text>
         </View>
@@ -47,7 +50,7 @@ export default function Login({navigation}) {
 
       </View>
 
-    </View>
+    </ScrollView>
   );
 };
 const styles = StyleSheet.create({
@@ -64,7 +67,7 @@ const styles = StyleSheet.create({
     fontSize: 17,
     marginVertical: 10,
     marginHorizontal: 20,
-    // color:'#000'
+    color:'#000000'
   },
   loginButton: {
     marginVertical: 10,
