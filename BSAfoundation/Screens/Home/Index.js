@@ -46,24 +46,25 @@ export default function Index({navigation}) {
 
             <View style={{ alignItems: 'center', paddingVertical: 5 }}>
                 <Image
-                    source={require("../../assets/icons/logo.png")}
-                    style={{ width: 100, height: 100 }}
+                    source={require("../../assets/images/BSAlogo-r.png")}
+                    style={{ width: 150, height: 150 }}
+                    resizeMode="contain"
                 />
             </View>
 
             <TouchableOpacity>
-                <Text style={styles.Intervention}>Intervation Agency</Text>
+                <Text style={styles.Intervention}>BSA Foundation</Text>
 
-                <Text style={styles.For}>For The Mandate Communities Ilaje And Ese-odo</Text>
+                <Text style={styles.For}>For The Mandate Communities in Oyo state</Text>
             </TouchableOpacity>
 
 
             {/* Vision OSOPADEC */}
             <View style={styles.background}>
                 <TouchableOpacity style={styles.Button}>
-                    <Text style={styles.About}>OSOPADEC Vision</Text>
+                    <Text style={styles.About}>BSA Vision</Text>
                 </TouchableOpacity>
-                <Text style={styles.Ondo}>...to be the most proactive and responsive interventionist agency that satisfies stakeholders' aspirations with excellence in service delivery</Text>
+                <Text style={styles.Ondo}>Our vision statement is a genuine service to humanity</Text>
                 {/* <TouchableOpacity style={styles.ButtonS}>
                     <Text style={styles.See}> See More....</Text>
 
@@ -76,9 +77,9 @@ export default function Index({navigation}) {
             {/* About OSOPADEC */}
             <View style={styles.background}>
                 <TouchableOpacity style={styles.Button}>
-                    <Text style={styles.About}>About OSOPADEC</Text>
+                    <Text style={styles.About}>About BSA</Text>
                 </TouchableOpacity>
-                <Text style={styles.Ondo}>Ondo State Oil Producing Areas Development Commission, OSOPADEC was established by the Laws of Ondo State CAP. 106 in 2001 to intervene in the development of the oil producing and impacted areas of Ondo State.</Text>
+                <Text style={styles.Ondo}>Booda Sunday Adeyemo (BSA) Foundation is a nonprofit organization to promote youth, teenagers' development, and self-discovery. As an organization, we belive that tennagers and youths are the tipping points in changing our world</Text>
                 <TouchableOpacity
                     style={styles.ButtonS}
                     onPress={() => navigation.navigate('AboutUs')}>
@@ -109,9 +110,9 @@ export default function Index({navigation}) {
             {/* Mission OSOPADEC */}
             <View style={styles.background}>
                 <TouchableOpacity style={styles.Button}>
-                    <Text style={styles.About}> OSOPADEC Mission</Text>
+                    <Text style={styles.About}> BSA Mission</Text>
                 </TouchableOpacity>
-                <Text style={styles.Ondo}>…to transform the lives of the people and ensure total prosperity and sustainable development through intervention programmes in the oil producing areas of Ondo State.</Text>
+                <Text style={styles.Ondo}>to raise young men and women to be reeponsible and productive in their respective endeavors</Text>
                 {/* <TouchableOpacity style={styles.ButtonS}>
                     <Text style={styles.See}> See More....</Text>
 
@@ -125,12 +126,12 @@ export default function Index({navigation}) {
             {/* Contact OSOPADEC */}
             <View style={styles.background}>
                 <TouchableOpacity style={styles.Button} onPress={() => navigation.navigate('ContactUs')}>
-                    <Text style={styles.About}>Contact OSOPADEC</Text>
+                    <Text style={styles.About}>Contact BSA</Text>
                 </TouchableOpacity>
                 <View style={{ flexDirection: 'column', alignItems: 'center', marginHorizontal: 9 }}>
-                    <Text style={{ fontSize: 17, textAlign: 'center' }}>Ondo State Oil Producing Areas Development Commission Headquaters, Obaile, Ondo State</Text>
+                    <Text style={{ fontSize: 17, textAlign: 'center' }}>Ogbomoso South Local Government, Oyo State, Ogbomoso</Text>
 
-                    <Text style={{ fontSize: 16, color: '#000' }}>Email: info@osopadec.gov.ng</Text>
+                    <Text style={{ fontSize: 16, color: '#000' }}>Email: info@BSA.gov.ng</Text>
 
                     <Text style={{ fontSize: 16, color: '#000' }}>+234 706 181 3135</Text>
 
@@ -158,7 +159,7 @@ export default function Index({navigation}) {
             </View>
             {/* End Contact OSOPADEC */}
 
-            <Text style={{ textAlign: 'center', paddingBottom: 10 }}>© 2020 OSOPADEC. All Rights Reserved</Text>
+            <Text style={{ textAlign: 'center', paddingBottom: 10 }}>© 2020 BSA. All Rights Reserved</Text>
         </ScrollView>
     )
 }
@@ -203,6 +204,7 @@ const styles = StyleSheet.create({
         fontWeight: '600',
         textAlign: 'center',
         color: '#d47400',
+        marginTop:-5,
     },
     For: {
         textAlign: 'center',

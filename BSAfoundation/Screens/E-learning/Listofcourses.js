@@ -25,7 +25,7 @@ const img13 = require('../../assets/images/digitalmarketing.jpg')
     img:img1,
     title: 'Web Design Basics (HTML, CSS, BOOTSTRAP)',
     duration:"5 Weeks",
-    url:'Video'
+    url:'Video',
  },
   {
     id: 2,
@@ -108,13 +108,13 @@ const img13 = require('../../assets/images/digitalmarketing.jpg')
 
 
 
-export default function Listofcourses({ navigation }) {
+export default function Listofcourses({ navigation, }) {
   
   const [selectedId, setSelectedId] = useState(null);
   const renderItem = ({ item,  }) => {
     console.log(item)
     return (
-      <TouchableOpacity  onPress={()=>navigation.navigate(item.url)}>
+      <TouchableOpacity  onPress={()=>navigation.navigate(item.url, {data: item})}>
         <View style={styles.card}>
           <Image source={item.img}
             style={ {width: '100%',

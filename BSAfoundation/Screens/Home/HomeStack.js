@@ -21,14 +21,14 @@ export default function HomeStack() {
         options={{
           headerTintColor: 'white',
           headerStyle: { backgroundColor: '#4266f5'},
-          title:'OSOPADEC',
+          title:'BSA FOUNDATION',
           // headerShown:false,
           headerTitleStyle: {
             fontWeight: 'bold',
             justifyContent:'center',
             alignSelf:'center',
-            paddingLeft:'35%'
-             },
+            paddingLeft:'25%'
+            },
         
         }}
       />
