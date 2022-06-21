@@ -14,7 +14,7 @@ export default function AboutUs() {
     // <NavigationContainer>
       <Tab.Navigator>
         <Tab.Screen name="Administration" component={Administration} />
-        <Tab.Screen name="Departments" component={Departments} />
+        {/* <Tab.Screen name="Departments" component={Departments} /> */}
       </Tab.Navigator>
     // </NavigationContainer> 
   );

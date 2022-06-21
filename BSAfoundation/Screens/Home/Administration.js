@@ -5,7 +5,7 @@ import images from '../../constants/images'
 const DATA = [
     {
         id: 1,
-        img: images.profile3, 
+        img: images.official3, 
          name:'Otunba (Hon.) Sam Oluwadamilohun Erejuwa',
         post: 'Chairman',
         phone: '+234 803 000 0000',
@@ -115,23 +115,26 @@ export default function Administration() {
 
     return (
         <ScrollView style={styles.container}>
+            <View style={{alignItems:"center"}}>
             <Text style={styles.board}>BOARD DIRECTORS</Text>
 
-            <FlatList
-                data={DATA}
-                renderItem={renderItem}
-                keyExtractor={(item) => item.id}
-                extraData={selectedId}
-                numColumns={2}
-            />
-            <Text style={styles.board}>BOARD MEMBERS</Text>
-            <FlatList
-                data={DATAB}
-                renderItem={renderItem}
-                keyExtractor={(item) => item.id}
-                extraData={selectedId}
-                numColumns={2}
-            />
+        <FlatList
+            data={DATA}
+            renderItem={renderItem}
+            keyExtractor={(item) => item.id}
+            extraData={selectedId}
+            numColumns={2}
+        />
+        <Text style={styles.board}>BOARD MEMBERS</Text>
+        <FlatList
+            data={DATAB}
+            renderItem={renderItem}
+            keyExtractor={(item) => item.id}
+            extraData={selectedId}
+            numColumns={2}
+        />
+            </View>
+        
         </ScrollView>
     );
 };
@@ -139,6 +142,7 @@ export default function Administration() {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
+        
         // justifyContent:'space-around',
         // marginHorizontal:
 

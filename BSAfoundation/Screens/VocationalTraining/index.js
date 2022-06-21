@@ -6,6 +6,7 @@ const img1 = require('../../assets/icons/aboutelearning.gif')
 const img2 = require('../../assets/icons/available.gif')
 const img3 = require('../../assets/icons/elearning.png')
 const img4 = require('../../assets/icons/howtouse.gif')
+const img5 = require('../../assets/icons/images(1).jpg')
 
 
 
@@ -29,6 +30,7 @@ const DATA = [
 ];
 
 export default function Index({navigation}) {
+
   const [selectedId, setSelectedId] = useState(null);
 
   const renderItem = ({ item,  }) => {
@@ -49,7 +51,11 @@ export default function Index({navigation}) {
 
   return (
     <View style={styles.container}>
-
+      <Image
+        source= {require('../../assets/images/images1.jpg')}
+        style={{width:360, alignSelf:"center"}}
+      />
+      <View style={{alignItems:"center"}}>
       <FlatList
         data={DATA}
         renderItem={renderItem}
@@ -57,6 +63,7 @@ export default function Index({navigation}) {
         extraData={selectedId}
         numColumns={2}
       />
+      </View>
 
     </View>
   );
@@ -73,7 +80,7 @@ const styles = StyleSheet.create({
     elevation: 10,
     height: 150,
     marginHorizontal: 10,
-    marginVertical: 10,
+    marginVertical: 40,
     justifyContent: 'center',
     alignItems: 'center',
     borderBottomLeftRadius: 10,

@@ -6,23 +6,23 @@ export default function EditProfile() {
     <View style={styles.container}>
 
       <View style={styles.image}>
-        <Image source={require('../../assets/images/profile10.jpg')}
+        <Image source={require('../../assets/images/OSP_4.jpg')}
           style={{ width: 120, height: 120, borderRadius: 100 }} />
 
       </View>
-      <Text style={styles.name}>Okoh Fidelis Godspower</Text>
+      <Text style={styles.name}>Sunday Adeytemo Jeremiah</Text>
 
 
 
       <ScrollView style={styles.section}>
         <TextInput
           style={styles.input}
-          placeholder=' Okoh Fidelis Godspower'
+          placeholder='Sunday Adeytemo Jeremiah'
         />
 
         <TextInput
           style={styles.input}
-          placeholder=' ikauy area ogbomoso Oyo state'
+          placeholder=' South Local Goverment ogbomoso Oyo state'
         />
 
         <TextInput
@@ -32,12 +32,12 @@ export default function EditProfile() {
 
         <TextInput
           style={styles.input}
-          placeholder='Okohfidelis@gmail.com'
+          placeholder='sundayadeyemo@gmail.com'
         />
 
         <TextInput
           style={styles.input}
-          placeholder=' Mr And Mrs Okoh'
+          placeholder=' Mr And Mrs Adeyemo'
         />
 
 

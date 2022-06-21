@@ -82,7 +82,7 @@ export default function Index({navigation}) {
                 <Text style={styles.Ondo}>Booda Sunday Adeyemo (BSA) Foundation is a nonprofit organization to promote youth, teenagers' development, and self-discovery. As an organization, we belive that tennagers and youths are the tipping points in changing our world</Text>
                 <TouchableOpacity
                     style={styles.ButtonS}
-                    onPress={() => navigation.navigate('AboutUs')}>
+                    onPress={() => navigation.navigate('Administration')}>
                     <Text style={styles.See}> See More....</Text>
 
                 </TouchableOpacity>
@@ -112,7 +112,7 @@ export default function Index({navigation}) {
                 <TouchableOpacity style={styles.Button}>
                     <Text style={styles.About}> BSA Mission</Text>
                 </TouchableOpacity>
-                <Text style={styles.Ondo}>to raise young men and women to be reeponsible and productive in their respective endeavors</Text>
+                <Text style={styles.Ondo}>To raise young men and women to be reeponsible and productive in their respective endeavors</Text>
                 {/* <TouchableOpacity style={styles.ButtonS}>
                     <Text style={styles.See}> See More....</Text>
 
@@ -150,16 +150,16 @@ export default function Index({navigation}) {
                         <Text style={styles.About}>Follow Us:</Text>
                     </TouchableOpacity>
                     <View style={{ flexDirection: 'row' }}>
-                        <TouchableOpacity><Image source={require("../../assets/icons/twitter.png")} style={{ marginRight: 10, width: 30, height: 30 }} /></TouchableOpacity>
                         <TouchableOpacity><Image source={require("../../assets/icons/facebook.png")} style={{ marginRight: 10, width: 30, height: 30 }} /></TouchableOpacity>
-                        <TouchableOpacity><Image source={require("../../assets/icons/instagram.png")} style={{ marginRight: 10, width: 30, height: 30 }} /></TouchableOpacity>
+                        <TouchableOpacity><Image source={require("../../assets/icons/twitter.png")} style={{ marginRight: 10, width: 30, height: 30 }} /></TouchableOpacity>
                         <TouchableOpacity><Image source={require("../../assets/icons/gmail.png")} style={{ marginRight: 10, width: 30, height: 30 }} /></TouchableOpacity>
+                        <TouchableOpacity><Image source={require("../../assets/icons/instagram.png")} style={{ marginRight: 10, width: 30, height: 30 }} /></TouchableOpacity>
                     </View>
                 </View>
             </View>
             {/* End Contact OSOPADEC */}
 
-            <Text style={{ textAlign: 'center', paddingBottom: 10 }}>© 2020 BSA. All Rights Reserved</Text>
+            <Text style={{ textAlign: 'center', paddingBottom: 10 }}>© 2022 BSA. All Rights Reserved</Text>
         </ScrollView>
     )
 }

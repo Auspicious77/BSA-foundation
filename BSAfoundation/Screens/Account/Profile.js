@@ -6,17 +6,17 @@ export default function Profile() {
     <View style={styles.container}>
 
       <View style={styles.image}>
-        <Image source={require('../../assets/images/profile10.jpg')}
+        <Image source={require('../../assets/images/OSP_4.jpg')}
           style={{ width: 120, height: 120, borderRadius: 100 }} />
 
       </View>
-      <Text style={styles.name}>Okoh Fidelis Godspower</Text>
+      <Text style={styles.name}>Sunday Adeyemo Jeremiah</Text>
 
 
 
       <ScrollView style={styles.section}>
         <TouchableOpacity style={styles.border}>
-          <Text style={styles.text1}>ikauy area ogbomoso Oyo state</Text>
+          <Text style={styles.text1}>South Local Government ogbomoso Oyo state</Text>
           <Text style={styles.text2}>Address</Text>
         </TouchableOpacity>
 
@@ -28,12 +28,12 @@ export default function Profile() {
         </TouchableOpacity>
 
         <TouchableOpacity style={styles.border}>
-          <Text style={styles.text1}>Okohfidelis@gmail.com</Text>
+          <Text style={styles.text1}>sundayadeyemo@gmail.com</Text>
           <Text style={styles.text2}>E-mail</Text>
         </TouchableOpacity>
 
         <TouchableOpacity style={styles.border}>
-          <Text style={styles.text1}>Mr And Mrs Okoh</Text>
+          <Text style={styles.text1}>Mr And Mrs Adeyemo</Text>
           <Text style={styles.text2}>Parent Name</Text>
         </TouchableOpacity>
 

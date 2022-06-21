@@ -8,7 +8,7 @@ const DATA = [
     {
         id: 1,
         img: images.a1,
-        name: 'vocational training working on a turning machine in the industry',
+        name: 'Baking and decoration',
         post: 'Akure, Ondo State',
         phone: '+234 803 000 0000',
         qualification: 'OND (Banking & Finance), ACIB, M. Sc., CEMAP, FCIFCN, MISMN, CPA'
@@ -16,50 +16,50 @@ const DATA = [
     {
         id: 2,
         img: images.a2,
-        name: 'Professional car mechanic working in auto repair service',
+        name: 'Tie and Die',
         post: 'Akure, Ondo State',
         phone: '+234 803 000 0000',
         qualification: 'MPA(Singapore), MBBS(Ibadan), MWACP(Lab. Medicine), Dip. Occ. Health (Illinois, Chicago)'
     }, {
         id: 3,
         img: images.a3,
-        name: 'Budget, Planning, Research and Statistics.',
+        name: 'Tailoring',
         post: 'Akure, Ondo State',
         phone: '+234 803 000 0000',
         qualification: 'B.A (Hons.) MIPR., LLB, BL,LLM'
     }, {
         id: 4,
         img: images.a4,
-        name: 'Electric Motors at Vocational Training School ',
+        name: 'Software Engineering',
         post: 'Akure, Ondo State',
         phone: '+234 803 000 0000',
         qualification: 'LLB, BL, aicmc.'
     }, {
         id: 5,
-        img: images.a1,
-        name: 'vocational training working on a turning machine in the industry',
+        img: images.a5,
+        name: 'Barbing',
         post: 'Akure, Ondo State',
         phone: '+234 803 000 0000',
         qualification: 'OND (Banking & Finance), ACIB, M. Sc., CEMAP, FCIFCN, MISMN, CPA'
     },
     {
         id: 6,
-        img: images.a2,
-        name: 'Professional car mechanic working in auto repair service',
+        img: images.a6,
+        name: 'HairDressing',
         post: 'Akure, Ondo State',
         phone: '+234 803 000 0000',
         qualification: 'MPA(Singapore), MBBS(Ibadan), MWACP(Lab. Medicine), Dip. Occ. Health (Illinois, Chicago)'
     }, {
         id: 7,
-        img: images.a3,
-        name: 'Budget, Planning, Research and Statistics.',
+        img: images.a7,
+        name: 'Data Science',
         post: 'Akure, Ondo State',
         phone: '+234 803 000 0000',
         qualification: 'B.A (Hons.) MIPR., LLB, BL,LLM'
     }, {
         id: 8,
-        img: images.a4,
-        name: 'Electric Motors at Vocational Training School ',
+        img: images.a8,
+        name: 'Garment Making',
         post: 'Akure, Ondo State',
         phone: '+234 803 000 0000',
         qualification: 'LLB, BL, aicmc.'
@@ -80,8 +80,8 @@ export default function ListOfVocations() {
                 <Image source={item.img}
                     style={{ width: 150, height: 150 }}
                 />
-                <Text style={{ width: 150, textAlign: 'center', fontSize: 14, color: '#000' }}>{item.name}</Text>
-                <Text style={{ width: 150, textAlign: 'center', marginBottom:20 }}>{item.post}</Text>
+                <Text style={{ width: 150, textAlign: 'center', fontSize: 18, color: '#000',  marginBottom:20}}>{item.name}</Text>
+                {/* <Text style={{ width: 150, textAlign: 'center', marginBottom:20 }}>{item.post}</Text> */}
                 {/* <Text>{item.phone}</Text>
             <Text style={{width:150}}>{item.qualification}</Text> */}
             </TouchableOpacity>
@@ -96,6 +96,7 @@ export default function ListOfVocations() {
 
     return (
         <ScrollView style={styles.container}>
+            <View style={{alignItems:"center"}}>
             <Text style={styles.board}>Enroll For Skill Acquisition</Text>
 
             <FlatList
@@ -105,6 +106,7 @@ export default function ListOfVocations() {
                 extraData={selectedId}
                 numColumns={2}
             />
+            </View>
 
         </ScrollView>
     );
