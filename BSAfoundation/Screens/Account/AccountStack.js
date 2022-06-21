@@ -62,10 +62,7 @@ export default function AccountStack() {
             paddingLeft:'32%'}
         }}
       />
-<Stack.Screen
-name='BottomStack'
-component={BottomStack}
-options={{headerShown:false}}/>
+
 
 
   
