@@ -161,7 +161,7 @@ export default function Index({navigation}) {
             </View>
             {/* End Contact OSOPADEC */}
 
-            <Text style={{ textAlign: 'center', paddingBottom: 10 }}>© 2022 BSA. All Rights Reserved</Text>
+            <Text style={{ textAlign: 'center', paddingBottom: 10, color: COLORS.gray }}>© 2022 BSA. All Rights Reserved</Text>
         </ScrollView>
     )
 }
