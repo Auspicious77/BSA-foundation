@@ -15,7 +15,7 @@ const Stack = createStackNavigator();
 
 export default function AuthStack() {
   return (
-    <Stack.Navigator>
+    <Stack.Navigator >
     <Stack.Screen
         name="Index"
         component={Login}

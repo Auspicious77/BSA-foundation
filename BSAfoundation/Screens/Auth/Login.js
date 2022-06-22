@@ -12,22 +12,22 @@ export default function Login({navigation}) {
       <View style={{ alignItems: 'center', paddingVertical: 25 }}>
         <Image
            source={require("../../assets/images/BSAlogologin.png")}
-          style={{ width: 150, height: 100 }}
+          style={{ width: 180, height: 100 }}
         />
       
 
 <Text style={styles.Intervention}> Booda Sunday Adeyemo</Text>
-<Paragraph style={{color:"#000033"}}>FOUNDATION</Paragraph>
+<Paragraph style={{color:"#000033", marginTop:10,fontSize:18,marginBottom:-10}}>FOUNDATION</Paragraph>
       </View>
       <TextInput
         style={styles.input}
-        placeholder=' Enter Your Community ID'
+        placeholder=' Enter Your Local Government'
         placeholderTextColor="#808080"
       />
 
       <TextInput
         style={styles.input}
-        placeholder=' Enter Your Password'
+        placeholder=' Enter Your Name'
         secureTextEntry
         placeholderTextColor="#808080"
       />
