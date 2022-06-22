@@ -33,9 +33,9 @@ export default function Login({navigation}) {
         placeholderTextColor="#808080"
       />
 
-{/* <TouchableOpacity onPress={() => navigation.navigate('ForgetPassword')}>
+<TouchableOpacity onPress={() => navigation.navigate('ForgetPassword')}>
         <Text style={styles.forgot}>forgot password?</Text>
-      </TouchableOpacity> */}
+      </TouchableOpacity>
       <TouchableOpacity style={styles.loginButton}
       onPress={() => navigation.navigate('BottomStack')}>
         <View>

@@ -8,7 +8,7 @@ import Index from './Index';
 // import Sponsorship from './Sponsorship';
 import Whatwedo from './Whatwedo';
 import Administration from './Administration';
-import {Head}from '../Head'
+
 
 
 
@@ -17,7 +17,7 @@ const Stack = createStackNavigator();
 export default function HomeStack() {
   return (
     <View style={{flex:1,}}>
-    <Head/>
+    
     <Stack.Navigator >
       <Stack.Screen
         name="index"
@@ -26,7 +26,7 @@ export default function HomeStack() {
           headerTintColor: 'white',
           headerStyle: { backgroundColor: '#4266f5'},
           title:'BSA FOUNDATION',
-          headerShown:false,
+          headerLeft: false,
           headerTitleStyle: {
             fontWeight: 'bold',
             justifyContent:'center',
