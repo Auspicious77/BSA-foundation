@@ -1,10 +1,11 @@
 import * as React from 'react';
-import { View, TextInput, StyleSheet, TouchableOpacity, Image, Text,ScrollView, Alert } from 'react-native';
+import { View, TextInput, StyleSheet, TouchableOpacity, Image, Text,ScrollView, } from 'react-native';
+import { Paragraph } from 'react-native-paper';
 
 
 export default function SignUp({navigation}) {
   return (
-    <ScrollView>
+    <ScrollView style={{flex:1,backgroundColor:"#ffffff"}}>
     <View style={styles.container}>
 
       <View style={{ alignItems: 'center', paddingVertical: 25 }}>
@@ -15,7 +16,7 @@ export default function SignUp({navigation}) {
       
 
 <Text style={styles.Intervention}> Booda Sunday Adeyemo</Text>
-<Paragraph style={{color:"#000033", marginTop:10,fontSize:18,marginBottom:-10}}>FOUNDATION</Paragraph>
+<Paragraph style={{color:"#000033", marginTop:10,fontSize:18,marginBottom:10}}>FOUNDATION</Paragraph>
         <Text style={styles.Intervention2}>Sign Up </Text>
       </View>
       <TextInput
@@ -27,13 +28,13 @@ export default function SignUp({navigation}) {
 
       <TextInput
         style={styles.input}
-        placeholder=' Enter Your Password'
-        secureTextEntry
+        placeholder=' State of Origin'
+        // secureTextEntry
         placeholderTextColor="#808080"
       />
       <TextInput
         style={styles.input}
-        placeholder=' Confirm Password'
+        placeholder=' Local Government Area'
         placeholderTextColor="#808080"
       />
 
@@ -54,7 +55,7 @@ export default function SignUp({navigation}) {
       />
       <TextInput
         style={styles.input}
-        placeholder=' Enter Your Date of Birth'
+        placeholder=' Enter Your Place of Birth'
         placeholderTextColor="#808080"
         
       />
@@ -75,7 +76,7 @@ export default function SignUp({navigation}) {
         alignSelf: 'center',
       }}
       >
-        <Text style={{ fontSize: 15 }} >  Already have an account?</Text>
+        <Text style={{ fontSize: 15, color:"#000000" }} >  Already have an account?</Text>
         <TouchableOpacity onPress={()=>navigation.navigate('Login')}>
           <Text style={{ color: "#4266f5", fontSize: 18 }}> Login </Text>
         </TouchableOpacity>
@@ -90,18 +91,19 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     //  marginHorizontal:20,
-    backgroundColor: '#fff'
+    backgroundColor: '#fff',
+    marginBottom:30
+    
   },
 
-  input: {
+   input: {
     borderWidth: 1,
-    borderColor: '#00020ac2',
+    borderColor: '#04116ec2',
     borderRadius: 7,
     fontSize: 17,
     marginVertical: 10,
     marginHorizontal: 20,
-    color:"#000000"
-   
+    color:'#000000'
   },
   loginButton: {
     marginVertical: 10,
@@ -122,11 +124,11 @@ const styles = StyleSheet.create({
     fontSize: 19,
     fontWeight: '500'
   },
-  Intervention: {
-    marginBottom: -10,
-    fontSize: 21,
-    color: '#04116ec2',
-    fontWeight: '600',
+  Intervention:{
+    marginBottom:-10,
+    fontSize:21,
+    color:'#000033',
+    fontWeight:'600',
   },
   forgot: {
     color: '#db0226',
@@ -135,10 +137,12 @@ const styles = StyleSheet.create({
     marginRight: 20
   },
   Intervention2: {
-    marginVertical: 10,
-    fontSize: 21,
-    color: '#04116ec2',
+    // marginVertical: 10,
+    fontSize: 41,
+    color: '#020d5fc2',
     fontWeight: '600',
+    marginBottom:-10,
+    marginTop:10,
   },
 
 })

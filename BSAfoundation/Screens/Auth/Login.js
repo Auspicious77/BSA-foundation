@@ -21,13 +21,13 @@ export default function Login({navigation}) {
       </View>
       <TextInput
         style={styles.input}
-        placeholder=' Enter Your Community ID'
+        placeholder=' Enter Your Local Government'
         placeholderTextColor="#808080"
       />
 
       <TextInput
         style={styles.input}
-        placeholder=' Enter Your Password'
+        placeholder=' Enter Your Name'
         secureTextEntry
         placeholderTextColor="#808080"
       />
