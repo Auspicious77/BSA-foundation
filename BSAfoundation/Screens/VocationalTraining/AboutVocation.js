@@ -42,7 +42,7 @@ export default function AboutVocation() {
         ref={pickerRef}
         selectedValue={selectedLanguage}
         onValueChange={(itemValue, itemIndex) =>
-          setSelectedLanguage(itemValue)
+          setSelectedLanguage(itemIndex = {itemValue})
         }>
         <Picker.Item label="Name Of Vocation"  />
         <Picker.Item label="Hairdressing" />  
@@ -63,7 +63,7 @@ export default function AboutVocation() {
         ref={pickerRef}
         selectedValue={selectedLanguage}
         onValueChange={(itemValue, itemIndex) =>
-          setSelectedLanguage(itemValue)
+          setSelectedLanguage(itemValue = {itemIndex})
         }>
         <Picker.Item label="Categories"  />
         <Picker.Item label="Baking"  />  
@@ -131,7 +131,8 @@ picker:{
   backgroundColor:'#fff',
   borderStyle:'solid',
   margin:10,
-  borderRadius:10
+  borderRadius:10,
+  color:"#000000"
 },
 loginButton: {
   marginVertical: 10,

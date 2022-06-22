@@ -23,7 +23,7 @@ export default function Login({navigation}) {
         style={styles.input}
         placeholder=' Enter Your email'
         placeholderTextColor="#808080"
-        placeTextSize={10}
+        
       />
 
       <TextInput

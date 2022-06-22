@@ -1,7 +1,7 @@
 import React from 'react'
 import { ScrollView, Text, View, Image, StyleSheet } from 'react-native'
 import { TouchableOpacity } from 'react-native-gesture-handler'
-export default function Profile() {
+export default function Profile({navigation}) {
   return (
     <View style={styles.container}>
 
@@ -52,7 +52,8 @@ export default function Profile() {
         
         </TouchableOpacity>
 
-        <TouchableOpacity style={styles.border}>
+        <TouchableOpacity style={styles.border}
+        onPress={()=> navigation.navigate('Login')}>
           <Text style={styles.text1}>LOG OUT</Text>
         
         </TouchableOpacity>
