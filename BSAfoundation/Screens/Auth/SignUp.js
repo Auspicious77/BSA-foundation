@@ -1,9 +1,8 @@
 import * as React from 'react';
-import { View, TextInput, StyleSheet, TouchableOpacity, Image, Text,ScrollView } from 'react-native'
+import { View, TextInput, StyleSheet, TouchableOpacity, Image, Text,ScrollView, Alert } from 'react-native';
+
 
 export default function SignUp({navigation}) {
-  const [text, setText] = React.useState('');
-
   return (
     <ScrollView>
     <View style={styles.container}>
@@ -20,37 +19,49 @@ export default function SignUp({navigation}) {
       <TextInput
         style={styles.input}
         placeholder=' Enter Your Full Name'
+        placeholderTextColor="#808080"
+        
       />
 
       <TextInput
         style={styles.input}
         placeholder=' Enter Your Password'
         secureTextEntry
+        placeholderTextColor="#808080"
       />
       <TextInput
         style={styles.input}
         placeholder=' Confirm Password'
+        placeholderTextColor="#808080"
       />
 
       <TextInput
         style={styles.input}
         placeholder=' Enter Your Home Address'
+        placeholderTextColor="#808080"
       />
       <TextInput
         style={styles.input}
         placeholder=' Enter Your Phone Number'
+        placeholderTextColor="#808080"
       />
       <TextInput
         style={styles.input}
         placeholder=' Enter Your E-mail'
+        placeholderTextColor="#808080"
       />
       <TextInput
         style={styles.input}
         placeholder=' Enter Your Date of Birth'
+        placeholderTextColor="#808080"
+        
       />
 
 
-      <TouchableOpacity style={styles.loginButton}>
+      <TouchableOpacity style={styles.loginButton}
+      onPress={()=>navigation.navigate('Login')}
+     
+      >
         <View>
           <Text style={styles.logintext}>SIGN UP</Text>
         </View>
@@ -82,12 +93,13 @@ const styles = StyleSheet.create({
 
   input: {
     borderWidth: 1,
-    borderColor: '#04116ec2',
+    borderColor: '#00020ac2',
     borderRadius: 7,
     fontSize: 17,
     marginVertical: 10,
     marginHorizontal: 20,
-    // color:'#000'
+    color:"#000000"
+   
   },
   loginButton: {
     marginVertical: 10,

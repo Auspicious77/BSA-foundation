@@ -4,7 +4,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import HomeStack from './Home/HomeStack';
 import ElearningStack from './E-learning/ElearningStack'
-import AuthStack from './Auth/AuthStack';
+
 import AccountStack from './Account/AccountStack';
 import VocationalStack from './VocationalTraining/VocatioalStack';
 
@@ -14,6 +14,7 @@ import { icons, COLORS } from "../constants";
 const Tab = createBottomTabNavigator();
 
 const tabOptions = {
+    
   // showLabel: false,
   
   style: {
@@ -35,8 +36,11 @@ const tabOptions = {
   return (
     <Tab.Navigator
     
+    
     tabBarOptions={tabOptions}
     screenOptions={({ route }) => ({
+        
+        
         tabBarIcon: ({ focused }) => {
             const tintColor = focused ? COLORS.primary : COLORS.gray;
 
@@ -105,18 +109,17 @@ const tabOptions = {
         }
     })}
 >
+     
       <Tab.Screen name="Home" 
       component={HomeStack} 
       options={{headerShown:false,}}
+      
       />
       <Tab.Screen name="Elearning" 
       component={ElearningStack} 
       options={{headerShown:false,}}
       />
-      <Tab.Screen name="Auth" 
-      component={AuthStack} 
-      options={{headerShown:false,}}
-      />
+     
       <Tab.Screen name="Account" 
       component={AccountStack} 
       options={{headerShown:false,}}

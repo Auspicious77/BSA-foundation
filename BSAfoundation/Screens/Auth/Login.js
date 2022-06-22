@@ -1,36 +1,42 @@
 import * as React from 'react';
-import { View, TextInput, StyleSheet, TouchableOpacity, Image, Text } from 'react-native'
+import { View, TextInput, StyleSheet, TouchableOpacity, Image, Text,ScrollView } from 'react-native'
+import { Paragraph } from 'react-native-paper';
+
 
 export default function Login({navigation}) {
   const [text, setText] = React.useState('');
 
   return (
-    <View style={styles.container}>
+    <ScrollView style={styles.container}>
 
       <View style={{ alignItems: 'center', paddingVertical: 25 }}>
         <Image
-          source={require("../../assets/icons/logo.png")}
-          style={{ width: 100, height: 100 }}
+           source={require("../../assets/images/BSAlogologin.png")}
+          style={{ width: 150, height: 100 }}
         />
+      
 
-<Text style={styles.Intervention}> OSOPADEC Intervation Agency</Text>
+<Text style={styles.Intervention}> Booda Sunday Adeyemo</Text>
+<Paragraph style={{color:"#000033", marginTop:10,fontSize:17,marginBottom:-10}}>FOUNDATION</Paragraph>
       </View>
       <TextInput
         style={styles.input}
         placeholder=' Enter Your Community ID'
+        placeholderTextColor="#808080"
       />
 
       <TextInput
         style={styles.input}
         placeholder=' Enter Your Password'
         secureTextEntry
+        placeholderTextColor="#808080"
       />
 
 <TouchableOpacity onPress={() => navigation.navigate('ForgetPassword')}>
         <Text style={styles.forgot}>forgot password?</Text>
       </TouchableOpacity>
       <TouchableOpacity style={styles.loginButton}
-      onPress={() => navigation.navigate('Login')}>
+      onPress={() => navigation.navigate('BottomStack')}>
         <View>
           <Text style={styles.logintext}>LOGIN</Text>
         </View>
@@ -39,7 +45,7 @@ export default function Login({navigation}) {
 
       <View style={{ flexDirection: 'row', justifyContent: 'center', alignItems: 'center',
         alignSelf: 'center', }}>
-        <Text style={{  fontSize:15}} >  Don’t have an account?</Text>
+        <Text style={{  fontSize:15,color:"#000000"}} >  Don’t have an account?</Text>
         <TouchableOpacity 
         onPress={() => navigation.navigate('SignUp')}>
           <Text style={{ color: "#4266f5",fontSize:18 }}>  Sign up</Text>
@@ -47,7 +53,7 @@ export default function Login({navigation}) {
 
       </View>
 
-    </View>
+    </ScrollView>
   );
 };
 const styles = StyleSheet.create({
@@ -64,7 +70,7 @@ const styles = StyleSheet.create({
     fontSize: 17,
     marginVertical: 10,
     marginHorizontal: 20,
-    // color:'#000'
+    color:'#000000'
   },
   loginButton: {
     marginVertical: 10,
@@ -88,7 +94,7 @@ const styles = StyleSheet.create({
   Intervention:{
     marginBottom:-10,
     fontSize:21,
-    color:'#04116ec2',
+    color:'#000033',
     fontWeight:'600',
   },
   forgot: {

@@ -10,6 +10,7 @@ import Whatwedo from './Whatwedo';
 import Administration from './Administration';
 
 
+
 const Stack = createStackNavigator();
 
 export default function HomeStack() {
@@ -91,7 +92,14 @@ export default function HomeStack() {
 
   
     </Stack.Navigator>
+    
   );
 }
+
+
+
+ 
+
+;
 
 
