@@ -15,7 +15,7 @@ const Stack = createStackNavigator();
 
 export default function HomeStack() {
   return (
-    <Stack.Navigator>
+    <Stack.Navigator >
       <Stack.Screen
         name="index"
         component={Index}
@@ -23,7 +23,7 @@ export default function HomeStack() {
           headerTintColor: 'white',
           headerStyle: { backgroundColor: '#4266f5'},
           title:'BSA FOUNDATION',
-          // headerShown:false,
+          headerShown:false,
           headerTitleStyle: {
             fontWeight: 'bold',
             justifyContent:'center',

@@ -45,6 +45,7 @@ const tabOptions = {
             const tintColor = focused ? COLORS.primary : COLORS.gray;
 
             switch (route.name) {
+                
                 case "Home":
                     return (
                         <Image
