@@ -10,34 +10,39 @@ export default function EditProfile() {
           style={{ width: 120, height: 120, borderRadius: 100 }} />
 
       </View>
-      <Text style={styles.name}>Sunday Adeytemo Jeremiah</Text>
+      <Text style={styles.name}>Sunday Adeyemo Jeremiah</Text>
 
 
 
       <ScrollView style={styles.section}>
         <TextInput
           style={styles.input}
-          placeholder='Sunday Adeytemo Jeremiah'
+          placeholder='Enter Full name'
+          placeholderTextColor="#808080"
         />
 
         <TextInput
           style={styles.input}
-          placeholder=' South Local Goverment ogbomoso Oyo state'
+          placeholder=' Enter Local Government'
+          placeholderTextColor="#808080"
         />
 
         <TextInput
           style={styles.input}
-          placeholder=' +233 4345 2225 7766'
+          placeholder=' Enter Phone number'
+          placeholderTextColor="#808080"
         />
 
         <TextInput
           style={styles.input}
-          placeholder='sundayadeyemo@gmail.com'
+          placeholder='Enter Email'
+          placeholderTextColor="#808080"
         />
 
         <TextInput
           style={styles.input}
-          placeholder=' Mr And Mrs Adeyemo'
+          placeholder=' Enter Parent Name'
+          placeholderTextColor="#808080"
         />
 
 
@@ -97,6 +102,7 @@ const styles = StyleSheet.create({
     fontSize: 17,
     marginVertical: 10,
     marginHorizontal: 20,
+    color:"#000000"
   },
 
 })
