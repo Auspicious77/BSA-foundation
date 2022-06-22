@@ -28,9 +28,20 @@ const Players =({navigation, route}) => {
 export default Players
 const styles = StyleSheet.create({
 mainplayerView: {
-  flex: 1
+  flex: 1,
+  alignItems: 'center',
+  backgroundColor: '#FAFAFA'
 },
-videoview: {
+postTittle: {
+ fontSize: 20,
+ fontWeight: 'bold',
+ marginTop: 20,
+ color: '#646464'
+},
+postArtist: {
+  fontSize: 16,
+  color: '#646464',
+  marginTop: 20
 
 }
 })
