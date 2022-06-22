@@ -17,19 +17,20 @@ export default function AuthStack() {
   return (
     <Stack.Navigator >
     <Stack.Screen
-        name="Index"
+        name="LOGIN"
         component={Login}
         options={{
+          headerLeft:false,
           headerTintColor: 'white',
             headerStyle: {  backgroundColor: '#4266f5', 
           
         },
-        title:'LOGIN',
+        title:'Login Page',
           headerTitleStyle: {
             // justifyContent:'center',
             // alignSelf:'center',
             paddingLeft:'35%',
-          fontSize:30}
+          fontSize:19}
         }}
       />
 
@@ -37,15 +38,17 @@ export default function AuthStack() {
         name="SignUp"
         component={SignUp}
         options={{
+          headerLeft:false,
           headerTintColor: 'white',
             headerStyle: {  backgroundColor: '#4266f5',
           
         },
         title:'Sign Up',
           headerTitleStyle: {
+            
             justifyContent:'center',
             alignSelf:'center',
-            paddingLeft:'32%'}
+            paddingLeft:'40%'}
         }}
       />
       <Stack.Screen
@@ -79,6 +82,7 @@ export default function AuthStack() {
         name="Login"
         component={Login}
         options={{
+          headerLeft:false,
           headerTintColor: 'white',
             headerStyle: {  backgroundColor: '#4266f5',
           
@@ -87,7 +91,7 @@ export default function AuthStack() {
           headerTitleStyle: {
             justifyContent:'center',
             alignSelf:'center',
-            paddingLeft:'25%'}
+            paddingLeft:'35%'}
         }}
       />
 
