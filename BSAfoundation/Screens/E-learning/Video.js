@@ -19,7 +19,7 @@ const Players =({navigation, route}) => {
           style={styles.Video}
         /> */}
         <View>
-          <Text>{items.tittle}</Text>
+          <Text>{postdata.tittle}</Text>
         </View>
         
         
