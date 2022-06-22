@@ -41,7 +41,7 @@ export default function Index({navigation}) {
           <Image source={item.img}
             style={{ width: 70, height: 70 }}
           />
-          <Text style={{fontSize:16,textAlign:'center'}}>{item.title}</Text>
+          <Text style={{fontSize:16,textAlign:'center', color:"black"}}>{item.title}</Text>
 
         </View>
       </TouchableOpacity>
@@ -51,10 +51,6 @@ export default function Index({navigation}) {
 
   return (
     <View style={styles.container}>
-      <Image
-        source= {require('../../assets/images/images1.jpg')}
-        style={{width:360, alignSelf:"center"}}
-      />
       <View style={{alignItems:"center"}}>
       <FlatList
         data={DATA}

@@ -1,6 +1,7 @@
 import React from 'react'
 import { ImageBackground, StyleSheet, Text, View, Image } from "react-native";
 import { ScrollView } from 'react-native';
+import { black } from 'react-native-paper/lib/typescript/styles/colors';
 import { icons, images } from '../../constants';
 
 export default function Whatwedo() {
@@ -61,7 +62,9 @@ export default function Whatwedo() {
 const styles = StyleSheet.create({
     text: {
         alignItems: 'center',
-        fontSize: 17
+        fontSize: 17,
+        color:"black",
+        opacity:0.8
     },
     ImageText: {
         alignItems: 'center',
@@ -75,10 +78,13 @@ const styles = StyleSheet.create({
         // alignItems:'center' ,
         fontSize: 20,
         fontWeight: 'bold',
+        color:"black"
     },
     Ondo: {
         alignItems: 'center',
-        fontSize: 17
+        fontSize: 17,
+        color:"black",
+        opacity:0.8,
     },
     In: {
         alignItems: 'center',

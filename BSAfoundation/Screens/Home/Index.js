@@ -131,7 +131,7 @@ export default function Index({navigation}) {
                     <Text style={styles.About}>Contact BSA</Text>
                 </TouchableOpacity>
                 <View style={{ flexDirection: 'column', alignItems: 'center', marginHorizontal: 9 }}>
-                    <Text style={{ fontSize: 17, textAlign: 'center' }}>Ogbomoso South Local Government, Oyo State, Ogbomoso</Text>
+                    <Text style={{ fontSize: 17, textAlign: 'center', color:"black" }}>Ogbomoso South Local Government, Oyo State, Ogbomoso</Text>
 
                     <Text style={{ fontSize: 16, color: '#000' }}>Email: info@BSA.gov.ng</Text>
 
@@ -161,7 +161,7 @@ export default function Index({navigation}) {
             </View>
             {/* End Contact OSOPADEC */}
 
-            <Text style={{ textAlign: 'center', paddingBottom: 10 }}>© 2022 BSA. All Rights Reserved</Text>
+            <Text style={{color:"black", textAlign: 'center', paddingBottom: 10 }}>© 2022 BSA. All Rights Reserved</Text>
         </ScrollView>
     )
 }

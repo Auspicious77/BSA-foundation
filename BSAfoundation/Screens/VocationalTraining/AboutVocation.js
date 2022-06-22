@@ -99,7 +99,7 @@ export default function AboutVocation() {
         <Picker.Item label="100,000 - 200,000"  />
       </Picker>
 
-      <Text style={{textAlign:'center',fontWeight:'bold',}}>
+      <Text style={{textAlign:'center',fontWeight:'bold', color:"black"}}>
       Upload Pictures Of Certification
       </Text>
 
@@ -131,7 +131,8 @@ picker:{
   backgroundColor:'#fff',
   borderStyle:'solid',
   margin:10,
-  borderRadius:10
+  borderRadius:10,
+  color:"black"
 },
 loginButton: {
   marginVertical: 10,
