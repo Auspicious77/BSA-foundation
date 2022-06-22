@@ -17,7 +17,7 @@ export default function Login({navigation}) {
       
 
 <Text style={styles.Intervention}> Booda Sunday Adeyemo</Text>
-<Paragraph style={{color:"#000033"}}>FOUNDATION</Paragraph>
+<Paragraph style={{color:"#000033", marginTop:10,fontSize:17,marginBottom:-10}}>FOUNDATION</Paragraph>
       </View>
       <TextInput
         style={styles.input}
