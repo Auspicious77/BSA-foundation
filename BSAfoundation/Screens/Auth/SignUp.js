@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { View, TextInput, StyleSheet, TouchableOpacity, Image, Text,ScrollView, Alert } from 'react-native';
-import AsyncStorage from '@react-native-async-storage/async-storage'
+
 
 export default function SignUp({navigation}) {
 //   const [Name, setName] = React.useState('');
