@@ -21,14 +21,15 @@ export default function AuthStack() {
         component={Login}
         options={{
           headerTintColor: 'white',
-            headerStyle: {  backgroundColor: '#4266f5',
+            headerStyle: {  backgroundColor: '#4266f5', 
           
         },
-        title:'Login',
+        title:'LOGIN',
           headerTitleStyle: {
-            justifyContent:'center',
-            alignSelf:'center',
-            paddingLeft:'32%'}
+            // justifyContent:'center',
+            // alignSelf:'center',
+            paddingLeft:'35%',
+          fontSize:30}
         }}
       />
 

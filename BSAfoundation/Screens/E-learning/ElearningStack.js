@@ -8,12 +8,15 @@ import Index from './Index';
 import Video from './Video';
 // import Howtouse from './Howtouse';
 import Listofcourses from './Listofcourses';
+import {Head}from '../Head'
 
 
 const Stack = createStackNavigator();
 
 export default function ElearningStack({navigation}) {
   return (
+     <View style={{flex:1,}}>
+    <Head/>
     <Stack.Navigator 
     ScreenOptions={{headerShown:false}}
 >
@@ -81,7 +84,7 @@ export default function ElearningStack({navigation}) {
       />
 
   
-    </Stack.Navigator>
+    </Stack.Navigator></View>
   );
 }
 

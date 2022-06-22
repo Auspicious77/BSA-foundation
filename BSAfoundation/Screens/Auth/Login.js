@@ -89,8 +89,9 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     padding: 12,
     color: '#fff',
-    fontSize: 19,
-    fontWeight: '500'
+    fontSize: 21,
+    fontWeight: '500',
+    alignSelf:"center"
   },
   Intervention:{
     marginBottom:-10,

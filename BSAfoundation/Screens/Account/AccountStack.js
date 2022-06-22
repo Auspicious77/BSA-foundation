@@ -7,6 +7,8 @@ import Profile from './Profile';
 import Index from './Index';
 // import Sponsorship from './Sponsorship';
 // import Whatwedo from './Whatwedo';
+import {Head}from '../Head'
+
 
 
 
@@ -14,6 +16,8 @@ const Stack = createStackNavigator();
 
 export default function AccountStack() {
   return (
+    <View style={{flex:1,}}>
+    <Head/>
     <Stack.Navigator>
       <Stack.Screen
         name="index"
@@ -67,7 +71,7 @@ export default function AccountStack() {
 
 
   
-    </Stack.Navigator>
+    </Stack.Navigator></View>
   );
 }
 

@@ -8,6 +8,7 @@ import Index from './Index';
 // import Sponsorship from './Sponsorship';
 import Whatwedo from './Whatwedo';
 import Administration from './Administration';
+import {Head}from '../Head'
 
 
 
@@ -15,6 +16,8 @@ const Stack = createStackNavigator();
 
 export default function HomeStack() {
   return (
+    <View style={{flex:1,}}>
+    <Head/>
     <Stack.Navigator >
       <Stack.Screen
         name="index"
@@ -91,7 +94,7 @@ export default function HomeStack() {
 
 
   
-    </Stack.Navigator>
+    </Stack.Navigator></View>
     
   );
 }
