@@ -21,7 +21,7 @@ export default function ContactUs() {
 
             {/* Contact OSOPADEC */}
             <View style={styles.background}>
-                <TouchableOpacity style={styles.Button} onPress={() => navigation.navigate('ContactUs')}>
+                <TouchableOpacity style={styles.Button}>
                     <Text style={styles.About}>Contact BSA</Text>
                 </TouchableOpacity>
                 <View style={{ flexDirection: 'column', alignItems: 'center', marginHorizontal: 9 }}>
