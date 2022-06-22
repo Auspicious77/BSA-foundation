@@ -209,7 +209,8 @@ const styles = StyleSheet.create({
     For: {
         textAlign: 'center',
         fontSize: 18,
-        // color:'#4266f5'
+        color:'#000000',
+        
     },
     About: {
         textAlign: 'center',
@@ -228,6 +229,8 @@ const styles = StyleSheet.create({
         textAlign: 'center',
         paddingHorizontal: 10,
         fontSize: 15,
+        color:'#000000',
+        opacity:0.8,
         // color: '#d47400'
     }
 });

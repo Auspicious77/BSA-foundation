@@ -6,10 +6,10 @@ const DATA = [
     {
         id: 1,
         img: images.official3, 
-         name:'Otunba (Hon.) Sam Oluwadamilohun Erejuwa',
+        name:'Hon Sunday Adeyemo Jeremiah',
         post: 'Chairman',
         phone: '+234 803 000 0000',
-        qualification: 'OND (Banking & Finance), ACIB, M. Sc., CEMAP, FCIFCN, MISMN, CPA'
+        // qualification: 'OND (Banking & Finance), ACIB, M. Sc., CEMAP, FCIFCN, MISMN, CPA'
     },
     {
         id: 2,
@@ -125,14 +125,14 @@ export default function Administration() {
             extraData={selectedId}
             numColumns={2}
         />
-        <Text style={styles.board}>BOARD MEMBERS</Text>
-        <FlatList
+        {/* <Text style={styles.board}>BOARD MEMBERS</Text> */}
+        {/* <FlatList
             data={DATAB}
             renderItem={renderItem}
             keyExtractor={(item) => item.id}
             extraData={selectedId}
             numColumns={2}
-        />
+        /> */}
             </View>
         
         </ScrollView>
