@@ -111,7 +111,7 @@ const img13 = require('../../assets/images/digitalmarketing.jpg')
 export default function Listofcourses({ navigation, }) {
   
   const [selectedId, setSelectedId] = useState(null);
-  const renderItem = ({ item,  }) => {
+  const renderItem = ({ item }) => {
     console.log(item)
     return (
       <TouchableOpacity  onPress={()=>navigation.navigate(item.url, {data: item})}>
