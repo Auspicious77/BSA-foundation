@@ -1,23 +1,8 @@
 import * as React from 'react';
 import { View, TextInput, StyleSheet, TouchableOpacity, Image, Text,ScrollView, Alert } from 'react-native';
-import AsyncStorage from '@react-native-async-storage/async-storage'
+
 
 export default function SignUp({navigation}) {
-//   const [Name, setName] = React.useState('');
-//   const setData = ()=> {
-//     if(Name.length==0){
-//  Alert.alert("please enter your name")
-//     }else{
-//       try {
-//     await AsyncStorage.setItem
-        
-//       } catch (error) {
-        
-//       }
-     
-//     }
-//   }
-
   return (
     <ScrollView>
     <View style={styles.container}>
@@ -35,7 +20,7 @@ export default function SignUp({navigation}) {
         style={styles.input}
         placeholder=' Enter Your Full Name'
         placeholderTextColor="#808080"
-        // onChangeText={(value) => setName (value)}
+        
       />
 
       <TextInput
@@ -75,7 +60,7 @@ export default function SignUp({navigation}) {
 
       <TouchableOpacity style={styles.loginButton}
       onPress={()=>navigation.navigate('Login')}
-      // onPressFunction={setData}
+     
       >
         <View>
           <Text style={styles.logintext}>SIGN UP</Text>
