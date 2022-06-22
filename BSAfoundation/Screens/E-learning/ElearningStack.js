@@ -15,19 +15,22 @@ const Stack = createStackNavigator();
 export default function ElearningStack({navigation}) {
   return (
     <Stack.Navigator 
+    ScreenOptions={{headerShown:false}}
 >
       <Stack.Screen
         name="Index"
         component={Listofcourses}
         options={{
           headerTintColor: 'white',
+          headerShown:false,
           headerStyle: { 
             backgroundColor: '#4266f5'},
           title:'LIST OF COURSES',
           headerTitleStyle: {
             justifyContent:'center',
             alignSelf:'center',
-            paddingLeft:'27%'
+            paddingLeft:'27%',
+            
              },
         
         }}

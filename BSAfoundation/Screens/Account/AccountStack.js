@@ -20,6 +20,7 @@ export default function AccountStack() {
         component={Index}
         options={{
           headerTintColor: 'white',
+          headerShown:false,
           headerStyle: {  backgroundColor: '#4266f5',
           
         },
