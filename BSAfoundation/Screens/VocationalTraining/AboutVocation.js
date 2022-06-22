@@ -132,11 +132,7 @@ picker:{
   borderStyle:'solid',
   margin:10,
   borderRadius:10,
-<<<<<<< HEAD
   color:"#000000"
-=======
-  color:"black"
->>>>>>> 43a3ffaf6e36121657f1df755e8ea39c46153bf4
 },
 loginButton: {
   marginVertical: 10,
