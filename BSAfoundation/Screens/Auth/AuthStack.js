@@ -64,6 +64,7 @@ export default function AuthStack() {
         name="ForgetPassword"
         component={ForgetPassword}
         options={{
+          headerLeft:false,
           headerTintColor: 'white',
             headerStyle: {  backgroundColor: '#4266f5',
           
@@ -73,7 +74,7 @@ export default function AuthStack() {
             justifyContent:'center',
             alignSelf:'center',
             alignSelf:'center',
-            paddingLeft:'20%'
+            paddingLeft:'25%'
           }
         }}
       />
