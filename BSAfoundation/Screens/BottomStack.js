@@ -113,6 +113,7 @@ const tabOptions = {
       <Tab.Screen name="Home" 
       component={HomeStack} 
       options={{headerShown:false,}}
+      
       />
       <Tab.Screen name="Elearning" 
       component={ElearningStack} 
