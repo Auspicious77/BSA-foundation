@@ -12,12 +12,12 @@ export default function Login({navigation}) {
       <View style={{ alignItems: 'center', paddingVertical: 25 }}>
         <Image
            source={require("../../assets/images/BSAlogologin.png")}
-          style={{ width: 150, height: 100 }}
+          style={{ width: 180, height: 100 }}
         />
       
 
 <Text style={styles.Intervention}> Booda Sunday Adeyemo</Text>
-<Paragraph style={{color:"#000033", marginTop:10,fontSize:17,marginBottom:-10}}>FOUNDATION</Paragraph>
+<Paragraph style={{color:"#000033", marginTop:10,fontSize:18,marginBottom:-10}}>FOUNDATION</Paragraph>
       </View>
       <TextInput
         style={styles.input}
