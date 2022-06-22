@@ -33,9 +33,9 @@ export default function Login({navigation}) {
         placeholderTextColor="#808080"
       />
 
-{/* <TouchableOpacity onPress={() => navigation.navigate('ForgetPassword')}>
+<TouchableOpacity onPress={() => navigation.navigate('ForgetPassword')}>
         <Text style={styles.forgot}>forgot password?</Text>
-      </TouchableOpacity> */}
+      </TouchableOpacity>
       <TouchableOpacity style={styles.loginButton}
       onPress={() => navigation.navigate('BottomStack')}>
         <View>
@@ -89,8 +89,9 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     padding: 12,
     color: '#fff',
-    fontSize: 19,
-    fontWeight: '500'
+    fontSize: 21,
+    fontWeight: '500',
+    alignSelf:"center"
   },
   Intervention:{
     marginBottom:-10,

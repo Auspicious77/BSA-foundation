@@ -10,17 +10,21 @@ import Index from './Index';
 
 
 
+
+
 const Stack = createStackNavigator();
 
 export default function AccountStack() {
   return (
+    <View style={{flex:1,}}>
+   
     <Stack.Navigator>
       <Stack.Screen
         name="index"
         component={Index}
         options={{
           headerTintColor: 'white',
-          headerShown:false,
+          headerLeft: false,
           headerStyle: {  backgroundColor: '#4266f5',
           
         },
@@ -67,7 +71,7 @@ export default function AccountStack() {
 
 
   
-    </Stack.Navigator>
+    </Stack.Navigator></View>
   );
 }
 

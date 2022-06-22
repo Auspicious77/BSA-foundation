@@ -11,10 +11,13 @@ import Administration from './Administration';
 
 
 
+
 const Stack = createStackNavigator();
 
 export default function HomeStack() {
   return (
+    <View style={{flex:1,}}>
+    
     <Stack.Navigator >
       <Stack.Screen
         name="index"
@@ -23,7 +26,7 @@ export default function HomeStack() {
           headerTintColor: 'white',
           headerStyle: { backgroundColor: '#4266f5'},
           title:'BSA FOUNDATION',
-          headerShown:false,
+          headerLeft: false,
           headerTitleStyle: {
             fontWeight: 'bold',
             justifyContent:'center',
@@ -91,7 +94,7 @@ export default function HomeStack() {
 
 
   
-    </Stack.Navigator>
+    </Stack.Navigator></View>
     
   );
 }

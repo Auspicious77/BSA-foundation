@@ -111,7 +111,7 @@ const img13 = require('../../assets/images/digitalmarketing.jpg')
 export default function Listofcourses({ navigation, }) {
   
   const [selectedId, setSelectedId] = useState(null);
-  const renderItem = ({ item,  }) => {
+  const renderItem = ({ item }) => {
     console.log(item)
     return (
       <TouchableOpacity  onPress={()=>navigation.navigate(item.url, {data: item})}>
@@ -121,8 +121,8 @@ export default function Listofcourses({ navigation, }) {
             height:150, borderRadius:10
             }}
           />
-          <Text>{item.title}</Text>
-          <Text>{item.duration}</Text>
+          <Text style={{color:"#000000", opacity:0.7}}>{item.title}</Text>
+          <Text style={{color:"#000000", opacity:0.7, marginBottom:10}}>{item.duration}</Text>
   
         </View>
       </TouchableOpacity>
@@ -155,7 +155,8 @@ export default function Listofcourses({ navigation, }) {
 const styles= StyleSheet.create({
 header: {
 fontSize: 18,
-textAlign:'center'
+textAlign:'center',
+color:"#000000"
 },
 
 container:{
@@ -166,6 +167,7 @@ card:{
   marginVertical:20,
   height:150 ,
   borderRadius:10,
+  marginTop:30,
 }
 })
 

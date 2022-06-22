@@ -9,6 +9,7 @@ import {
     FlatList,
     TextInput
 } from 'react-native';
+import { COLORS } from '../../constants';
 export default function ContactUs() {
     const [FullName, onChangeFullName] = React.useState("");
     const [Email, onChangeEmail] = React.useState("");
@@ -25,13 +26,13 @@ export default function ContactUs() {
                     <Text style={styles.About}>Contact BSA</Text>
                 </TouchableOpacity>
                 <View style={{ flexDirection: 'column', alignItems: 'center', marginHorizontal: 9 }}>
-                    <Text style={{ fontSize: 17, textAlign: 'center' }}>Ogbomoso Soputh Local Government, Ogbomoso, Oyo state</Text>
+                    <Text style={{ fontSize: 17, textAlign: 'center', color:COLORS.black, opacity: 0.7 }}>Ogbomoso Soputh Local Government, Ogbomoso, Oyo state</Text>
 
-                    <Text style={{ fontSize: 16, color: '#000' }}>Email: info@BSA.gov.ng</Text>
+                    <Text style={{ fontSize: 16, color: '#000', color:COLORS.black, opacity: 0.7 }}>Email: info@BSA.gov.ng</Text>
 
-                    <Text style={{ fontSize: 16, color: '#000' }}>+234 706 181 3135</Text>
+                    <Text style={{ fontSize: 16, color: '#000', color:COLORS.black }}>+234 706 181 3135</Text>
 
-                    <Text style={{ fontSize: 16, color: '#000' }}>+234 905 764 1515</Text>
+                    <Text style={{ fontSize: 16, color: '#000', color:COLORS.black }}>+234 905 764 1515</Text>
 
 
                 </View>

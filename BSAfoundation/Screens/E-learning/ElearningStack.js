@@ -10,10 +10,13 @@ import Video from './Video';
 import Listofcourses from './Listofcourses';
 
 
+
 const Stack = createStackNavigator();
 
 export default function ElearningStack({navigation}) {
   return (
+     <View style={{flex:1,}}>
+    
     <Stack.Navigator 
     ScreenOptions={{headerShown:false}}
 >
@@ -22,7 +25,8 @@ export default function ElearningStack({navigation}) {
         component={Listofcourses}
         options={{
           headerTintColor: 'white',
-          headerShown:false,
+          // headerShown:false,
+          headerLeft: false,
           headerStyle: { 
             backgroundColor: '#4266f5'},
           title:'LIST OF COURSES',
@@ -81,7 +85,7 @@ export default function ElearningStack({navigation}) {
       />
 
   
-    </Stack.Navigator>
+    </Stack.Navigator></View>
   );
 }
 

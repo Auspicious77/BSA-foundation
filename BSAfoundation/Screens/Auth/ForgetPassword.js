@@ -7,18 +7,18 @@ export default function ForgetPassword({navigation}) {
   return (
     <View style={styles.container}>
 
-      <View style={{ alignItems: 'center', paddingVertical: 25 }}>
+    <View style={{ alignItems: 'center', paddingVertical: 25 }}>
         <Image
-          source={require("../../assets/icons/logo.png")}
-          style={{ width: 100, height: 100 }}
+           source={require("../../assets/images/BSAlogo-r.png")}
+          style={{ width: 130, height: 100, marginBottom:20 }}
         />
 
-<Text style={styles.Intervention}> OSOPADEC Intervation Agency</Text>
+{/* <Text style={styles.Intervention}> Booda Sunday Adeyemo Foundation</Text> */}
       </View>
       <TextInput
         style={styles.input}
-        placeholder=' Enter Your Community ID'
-      />
+        placeholder='  Enter Email Address'
+        placeholderTextColor="#00000048"      />
 
     
 
@@ -33,7 +33,7 @@ export default function ForgetPassword({navigation}) {
       <View style={{ flexDirection: 'row', justifyContent: 'center', alignItems: 'center',
         alignSelf: 'center', }}>
         <Text style={{  fontSize:15}} >  Already Have An Account</Text>
-        <TouchableOpacity >
+        <TouchableOpacity onPress={()=>navigation.navigate('Login')}>
           <Text style={{ color: "#4266f5",fontSize:18 }}>Login</Text>
         </TouchableOpacity>
 

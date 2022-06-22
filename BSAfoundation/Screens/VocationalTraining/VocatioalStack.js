@@ -8,7 +8,7 @@ import SubmitIdeas from './SubmitIdeas';
 import Vocationform from './Vocationform';
 import index from './index'
 // import Whatwedo from './Whatwedo';
-// import {Head}from '../Head'
+
 
 
 const Stack = createStackNavigator();
@@ -16,13 +16,13 @@ const Stack = createStackNavigator();
 export default function VocationalStack() {
   return (
   <View style={{flex:1}}>
-   {/* <Head />  */}
+   
     <Stack.Navigator>
        <Stack.Screen
         name="index"
         component={index}
         options={{
-          // headerShown:false,
+          headerLeft: false,
           headerTintColor: 'white',
           headerStyle: {  backgroundColor: '#4266f5',
           
