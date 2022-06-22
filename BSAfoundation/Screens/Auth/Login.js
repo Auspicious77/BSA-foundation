@@ -11,30 +11,31 @@ export default function Login({navigation}) {
 
       <View style={{ alignItems: 'center', paddingVertical: 25 }}>
         <Image
-           source={require("../../assets/images/BSAlogologin.png")}
-          style={{ width: 180, height: 100 }}
+           source={require("../../assets/images/BSAlogo-r.png")}
+          style={{ width: 130, height: 100, marginBottom:20 }}
         />
       
-
+{/* 
 <Text style={styles.Intervention}> Booda Sunday Adeyemo</Text>
-<Paragraph style={{color:"#000033", marginTop:10,fontSize:18,marginBottom:-10}}>FOUNDATION</Paragraph>
+<Paragraph style={{color:"#000033", marginTop:10,fontSize:18,marginBottom:30}}>FOUNDATION</Paragraph> */}
       </View>
       <TextInput
         style={styles.input}
-        placeholder=' Enter Your Local Government'
+        placeholder=' Enter Your email'
         placeholderTextColor="#808080"
+        placeTextSize={10}
       />
 
       <TextInput
         style={styles.input}
-        placeholder=' Enter Your Name'
+        placeholder=' Enter Your  Password'
         secureTextEntry
         placeholderTextColor="#808080"
       />
 
-<TouchableOpacity onPress={() => navigation.navigate('ForgetPassword')}>
+{/* <TouchableOpacity onPress={() => navigation.navigate('ForgetPassword')}>
         <Text style={styles.forgot}>forgot password?</Text>
-      </TouchableOpacity>
+      </TouchableOpacity> */}
       <TouchableOpacity style={styles.loginButton}
       onPress={() => navigation.navigate('BottomStack')}>
         <View>
@@ -67,7 +68,7 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     borderColor: '#04116ec2',
     borderRadius: 7,
-    fontSize: 17,
+    fontSize: 13,
     marginVertical: 10,
     marginHorizontal: 20,
     color:'#000000'
@@ -88,8 +89,9 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     padding: 12,
     color: '#fff',
-    fontSize: 19,
-    fontWeight: '500'
+    fontSize: 21,
+    fontWeight: '500',
+    alignSelf:"center"
   },
   Intervention:{
     marginBottom:-10,

@@ -21,6 +21,8 @@ const sliderimages = [
     images.ilajepictures_3,
     images.ilajepictures_4,
     images.ilajepictures_5,
+    images.ilajepictures_5a,
+    images.ilajepictures_5b,
     images.ilajepictures_6,
 ];
 export default function Index({navigation}) {
@@ -209,7 +211,8 @@ const styles = StyleSheet.create({
     For: {
         textAlign: 'center',
         fontSize: 18,
-        // color:'#4266f5'
+        color:'#000000',
+        
     },
     About: {
         textAlign: 'center',
@@ -228,6 +231,8 @@ const styles = StyleSheet.create({
         textAlign: 'center',
         paddingHorizontal: 10,
         fontSize: 15,
+        color:'#000000',
+        opacity:0.8,
         // color: '#d47400'
     }
 });

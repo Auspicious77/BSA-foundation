@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { View, TextInput, StyleSheet, TouchableOpacity, Image, Text,ScrollView, } from 'react-native';
-import { Paragraph } from 'react-native-paper';
+
 
 
 export default function SignUp({navigation}) {
@@ -8,15 +8,14 @@ export default function SignUp({navigation}) {
     <ScrollView style={{flex:1,backgroundColor:"#ffffff"}}>
     <View style={styles.container}>
 
-      <View style={{ alignItems: 'center', paddingVertical: 25 }}>
-      <Image
-           source={require("../../assets/images/BSAlogologin.png")}
-          style={{ width: 180, height: 100 }}
+    <View style={{ alignItems: 'center', paddingVertical: 25 }}>
+        <Image
+           source={require("../../assets/images/BSAlogo-r.png")}
+          style={{ width: 130, height: 100, marginBottom:20 }}
         />
       
 
-<Text style={styles.Intervention}> Booda Sunday Adeyemo</Text>
-<Paragraph style={{color:"#000033", marginTop:10,fontSize:18,marginBottom:10}}>FOUNDATION</Paragraph>
+
         <Text style={styles.Intervention2}>Sign Up </Text>
       </View>
       <TextInput
@@ -40,11 +39,6 @@ export default function SignUp({navigation}) {
 
       <TextInput
         style={styles.input}
-        placeholder=' Enter Your Home Address'
-        placeholderTextColor="#808080"
-      />
-      <TextInput
-        style={styles.input}
         placeholder=' Enter Your Phone Number'
         placeholderTextColor="#808080"
       />
@@ -55,7 +49,12 @@ export default function SignUp({navigation}) {
       />
       <TextInput
         style={styles.input}
-        placeholder=' Enter Your Place of Birth'
+        placeholder=' Enter Your Password'
+        placeholderTextColor="#808080"
+      />
+      <TextInput
+        style={styles.input}
+        placeholder=' Confirm Your Password'
         placeholderTextColor="#808080"
         
       />
@@ -138,12 +137,16 @@ const styles = StyleSheet.create({
   },
   Intervention2: {
     // marginVertical: 10,
-    fontSize: 41,
+    fontSize: 30,
     color: '#020d5fc2',
     fontWeight: '600',
-    marginBottom:-10,
-    marginTop:10,
-  },
+    marginBottom:-25,
+    marginTop:5,
+    // alignSelf:"flex-start",
+    // marginLeft:8,
+    marginVertical: 10,
+    marginHorizontal: 20,
+    },
 
 })
 

@@ -14,11 +14,13 @@ export const adminsupplies = require("../assets/images/adminsupplies.jpg");
 export const budget = require("../assets/images/budget.jpg");
 export const community = require("../assets/images/community.jpg");
 export const ilajepictures_1 = require("../assets/images/OSP_4.jpg");
-export const ilajepictures_2 = require("../assets/images/ilajepictures_2.jpeg");
-export const ilajepictures_3 = require("../assets/images/ilajepictures_3.jpeg");
-export const ilajepictures_4 = require("../assets/images/ilajepictures_4.jpeg");
-export const ilajepictures_5 = require("../assets/images/ilajepictures_5.jpeg");
-export const ilajepictures_6 = require("../assets/images/ilajepictures_6.jpeg");
+export const ilajepictures_2 = require("../assets/images/skill4.jpg");
+export const ilajepictures_3 = require("../assets/images/sk11.jpg");
+export const ilajepictures_4 = require("../assets/images/skill3.jpg");
+export const ilajepictures_5 = require("../assets/images/sk12.jpg");
+export const ilajepictures_5a = require("../assets/images/sk15.jpg");
+export const ilajepictures_5b = require("../assets/images/face3.jpg");
+export const ilajepictures_6 = require("../assets/images/compiled.jpg");
 export const ilajepictures_7 = require("../assets/images/ilajepictures_7.jpg");
 export const bannerbg = require("../assets/images/banner_bg.jpg");
 export const official1 = require("../assets/images/official1.jpg");
@@ -57,6 +59,8 @@ export default {
     ilajepictures_3,
     ilajepictures_4,
     ilajepictures_5,
+    ilajepictures_5a,
+    ilajepictures_5b,
     ilajepictures_6,
     ilajepictures_7,
     bannerbg,
