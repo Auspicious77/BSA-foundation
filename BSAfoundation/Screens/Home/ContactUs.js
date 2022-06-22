@@ -65,6 +65,7 @@ export default function ContactUs() {
                     value={FullName}
                     placeholder="Full-Name"
                     keyboardType="default"
+                    placeholderTextColor="#808080"
                 />
             </View>
 
@@ -75,6 +76,7 @@ export default function ContactUs() {
                     value={Email}
                     placeholder="youremail@gmail.com"
                     keyboardType="email-address"
+                    placeholderTextColor="#808080"
                 />
             </View>
 
@@ -85,6 +87,7 @@ export default function ContactUs() {
                     value={Subject}
                     placeholder="Subject"
                     keyboardType="default"
+                    placeholderTextColor="#808080"
                 />
             </View>
 
@@ -98,6 +101,7 @@ export default function ContactUs() {
                     value={Message}
                     placeholder="Enter Your Message Here..."
                     keyboardType="default"
+                    placeholderTextColor="#808080"
                 />
             </View>
 
