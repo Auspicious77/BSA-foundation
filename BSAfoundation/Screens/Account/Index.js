@@ -48,11 +48,7 @@ export default function Index({navigation}) {
         <Image source={item.img}
           style={{ width: 70, height: 70 }}
         />
-<<<<<<< HEAD
-        <Text style={{color:"#000000"}}>{item.title}</Text>
-=======
         <Text style={{color:"black"}}>{item.title}</Text>
->>>>>>> 43a3ffaf6e36121657f1df755e8ea39c46153bf4
 
       </View>
     </TouchableOpacity>
