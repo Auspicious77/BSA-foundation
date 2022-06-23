@@ -121,12 +121,12 @@ const tabOptions = {
       options={{headerShown:false,}}
       />
      
-      <Tab.Screen name="Vocation" 
-      component={VocationalStack} 
-      options={{headerShown:false,}}
-      />
       <Tab.Screen name="Account" 
       component={AccountStack} 
+      options={{headerShown:false,}}
+      />
+      <Tab.Screen name="Vocation" 
+      component={VocationalStack} 
       options={{headerShown:false,}}
       />
     </Tab.Navigator>
