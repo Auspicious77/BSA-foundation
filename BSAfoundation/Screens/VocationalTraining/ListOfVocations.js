@@ -30,7 +30,7 @@ const DATA = [
     }, {
         id: 4,
         img: images.a4,
-        name: 'Shoe making',
+        name: 'Software Engineering',
         post: 'Akure, Ondo State',
         phone: '+234 803 000 0000',
         qualification: 'LLB, BL, aicmc.'
@@ -52,7 +52,7 @@ const DATA = [
     }, {
         id: 7,
         img: images.a7,
-        name: 'Bag Making',
+        name: 'Data Science',
         post: 'Akure, Ondo State',
         phone: '+234 803 000 0000',
         qualification: 'B.A (Hons.) MIPR., LLB, BL,LLM'

@@ -48,11 +48,7 @@ export default function Index({navigation}) {
         <Image source={item.img}
           style={{ width: 70, height: 70 }}
         />
-
-        <Text style={{color:"#000000"}}>{item.title}</Text>
-
-   
-
+        <Text style={{color:"black"}}>{item.title}</Text>
 
       </View>
     </TouchableOpacity>

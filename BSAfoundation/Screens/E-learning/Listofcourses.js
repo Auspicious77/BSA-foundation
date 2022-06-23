@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 
-
 import { ScrollView,View,Image, Text ,StyleSheet,FlatList,TouchableOpacity} from 'react-native'
 import images from '../../constants'
 
@@ -17,7 +16,6 @@ const img10 = require('../../assets/images/computerbasics.jpg')
 const img12= require('../../assets/images/aws.jpg')
 const img13 = require('../../assets/images/digitalmarketing.jpg')
 // const img13= require('../../assets/images/datascience.png')
-
 
 
 
@@ -123,7 +121,6 @@ export default function Listofcourses({ navigation, }) {
             height:150, borderRadius:10
             }}
           />
-
           <Text style={{color:"#000000", opacity:0.7}}>{item.title}</Text>
           <Text style={{color:"#000000", opacity:0.7, marginBottom:10}}>{item.duration}</Text>
   
