@@ -7,7 +7,7 @@ const DATA = [
         id: 1,
         img: images.official3, 
         name:'Sunday Adeyemo Jeremiah',
-        post: 'Chairman',
+        post: 'Director',
         phone: '+234 803 000 0000',
         // qualification: 'OND (Banking & Finance), ACIB, M. Sc., CEMAP, FCIFCN, MISMN, CPA'
     },
@@ -61,7 +61,7 @@ export default function Administration() {
     return (
         <ScrollView style={styles.container}>
             <View style={{alignItems:"center"}}>
-            <Text style={styles.board}>BOARD DIRECTOR</Text>
+            {/* <Text style={styles.board}>BOARD DIRECTOR</Text> */}
 
         <FlatList
             data={DATA}
