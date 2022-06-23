@@ -1,5 +1,4 @@
 // export const profile1 = require("../assets/images/profile1.jpg");
-export const profile2 = require("../assets/images/profile2.jpg");
 // export const profile3 = require("../assets/images/profile3.jpg");
 // export const profile4 = require("../assets/images/profile4.jpg");
 // export const profile5 = require("../assets/images/profile5.jpg");
@@ -64,8 +63,6 @@ export default {
     ilajepictures_6,
     // ilajepictures_7,
     // bannerbg,
-    // profile1,
-    profile2,
     // profile3,
     // profile4,
     // profile5,
