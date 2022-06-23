@@ -37,17 +37,17 @@ export default function Administration() {
         // const color = item.id === selectedId ? 'white' : 'black';
 
         return (
-            <View style={{marginHorizontal:5}}>
-                <View>
+            <View style={{marginHorizontal:5,alignContent:"center"  }}>
+                <View >
                 <Image source={item.img}
-                style={{width:350,height:500, marginTop:-30}}
+                style={{width:"100%",height:500, marginTop:-30,}}
                 resizeMode="contain"
                 />
                 </View>
-                <Text style={{ color:"black", textAlign:"center", fontWeight:"bold", fontSize:25, marginTop:-30}}>{item.name}</Text>
+                <Text style={{ color:"#000000", textAlign:"center", fontWeight:"bold", fontSize:25, marginTop:-30}}>{item.name}</Text>
             <Text style={styles.post}>{item.post}</Text>
-            <Text>{item.phone}</Text>
-            <Text style={{width:150,}}>{item.qualification}</Text>
+            <Text style={{ color:"#000000", textAlign:"center"}}>{item.phone}</Text>
+            {/* <Text style={{ color:"#000000", textAlign:"center", fontWeight:"bold", fontSize:25, marginTop:-30}}>{item.qualification}</Text> */}
             </View>
             // <Item
             //     item={item}
@@ -101,7 +101,7 @@ const styles = StyleSheet.create({
         color:'#000'
     },
     post: {
-        color:"black",
+        color:"#000000",
         textAlign:"center",
         fontSize:20
     }
