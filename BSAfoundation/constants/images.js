@@ -29,10 +29,10 @@ export const official3 = require("../assets/images/face2.jpg");
 export const a1 = require("../assets/images/bake.jpg");
 export const a2 = require("../assets/images/tie1.jpg");
 export const a3 = require("../assets/images/tailor1.jpg");
-export const a4 = require("../assets/images/soft2.jpg");
+export const a4 = require("../assets/images/shoe.jpg");
 export const a5 = require("../assets/images/barb2.jpg");
 export const a6 = require("../assets/images/hair.jpg");
-export const a7 = require("../assets/images/data.jpg");
+export const a7 = require("../assets/images/bag2.jpg");
 export const a8 = require("../assets/images/garment.jpg");
 
 
