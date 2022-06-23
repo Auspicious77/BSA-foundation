@@ -8,15 +8,11 @@ const DATA = [
         img: images.official3, 
         name:'Sunday Adeyemo Jeremiah',
         post: 'Chairman',
-        phone: '+234 803 000 0000',
+        phone: '(+234 803 000 0000)',
         // qualification: 'OND (Banking & Finance), ACIB, M. Sc., CEMAP, FCIFCN, MISMN, CPA'
     },
     {
-        id: 2,
-        img: images.profile2,
-        name:'Dr. Victor Koledoye',
-        post: 'Executive Secretary',
-        phone: '+234 803 000 0000',
+      
         // qualification: 'MPA(Singapore), MBBS(Ibadan), MWACP(Lab. Medicine), Dip. Occ. Health (Illinois, Chicago)'
     }, 
     
@@ -35,16 +31,16 @@ export default function Administration() {
     const renderItem = ({ item }) => {
 
         return (
-            <View style={{marginHorizontal:5,alignContent:"center"  }}>
+            <View style={{alignContent:"center", justifyContent: 'flex-start'  }}>
                 <View >
                 <Image source={item.img}
-                style={{width:"100%",height:500, marginTop:-30,}}
+                style={{width:"100%",height:500, marginTop:-40,}}
                 resizeMode="contain"
                 />
                 </View>
-                <Text style={{ color:"#000000", textAlign:"center", fontWeight:"bold", fontSize:25, marginTop:-30}}>{item.name}</Text>
+                <Text style={{ color:"#000000", textAlign:"center", fontWeight:"bold", fontSize:25, marginTop:-60}}>{item.name}</Text>
             <Text style={styles.post}>{item.post}</Text>
-            <Text style={{ color:"#000000", textAlign:"center"}}>{item.phone}</Text>
+            <Text style={{ color:"#000000", textAlign:"center", opacity: 0.8}}>{item.phone}</Text>
             {/* <Text style={{ color:"#000000", textAlign:"center", fontWeight:"bold", fontSize:25, marginTop:-30}}>{item.qualification}</Text> */}
             </View>
             // <Item
@@ -59,8 +55,6 @@ export default function Administration() {
     return (
         <ScrollView style={styles.container}>
             <View style={{alignItems:"center"}}>
-            <Text style={styles.board}>BOARD DIRECTORS</Text>
-
         <FlatList
             data={DATA}
             renderItem={renderItem}
@@ -68,14 +62,6 @@ export default function Administration() {
             extraData={selectedId}
             numColumns={2}
         />
-        {/* <Text style={styles.board}>BOARD MEMBERS</Text> */}
-        {/* <FlatList
-            data={DATAB}
-            renderItem={renderItem}
-            keyExtractor={(item) => item.id}
-            extraData={selectedId}
-            numColumns={2}
-        /> */}
             </View>
         
         </ScrollView>
@@ -102,7 +88,8 @@ const styles = StyleSheet.create({
 
         color:"#000000",
         textAlign:"center",
-        fontSize:20
+        fontSize:20,
+        opacity: 0.8
 
     }
    

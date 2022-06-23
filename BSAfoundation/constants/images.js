@@ -48,8 +48,6 @@ export default {
     official1,
     official2,
     official3,
-    budget,
-    community,
     ilajepictures_1,
     ilajepictures_2,
     ilajepictures_3,

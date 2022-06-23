@@ -64,7 +64,7 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         fontSize: 17,
         color:"black",
-        opacity:0.8
+        opacity:0.5
     },
     ImageText: {
         alignItems: 'center',
@@ -84,7 +84,7 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         fontSize: 17,
         color:"black",
-        opacity:0.8,
+        opacity:0.6,
     },
     In: {
         alignItems: 'center',

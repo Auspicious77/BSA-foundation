@@ -4,6 +4,7 @@ import { ScrollView, Text,StyleSheet, View } from 'react-native';
 import { Picker } from '@react-native-picker/picker';
 import ImagePicker from "react-native-customized-image-picker";
 import { TouchableOpacity } from 'react-native-gesture-handler';
+import { COLORS } from '../../constants';
 
 export default function AboutVocation() {
 
@@ -15,6 +16,7 @@ export default function AboutVocation() {
     ImagePicker.openPicker({
       width: 300,
       height: 300,
+      color: '#000',
       cropping: true,
       compressImageQuality: 0.7
     }).then(image => {
@@ -33,7 +35,7 @@ export default function AboutVocation() {
   }
   return (
     <ScrollView>
-      <Text style={{textAlign:'center',fontSize:18,fontWeight:'bold',marginVertical:10}}>
+      <Text style={{textAlign:'center',fontSize:18,fontWeight:'bold',marginVertical:10, color: COLORS.black}}>
         Apply For Funding
       </Text>
 

@@ -131,13 +131,13 @@ export default function Index({navigation}) {
                     <Text style={styles.About}>Contact BSA</Text>
                 </TouchableOpacity>
                 <View style={{ flexDirection: 'column', alignItems: 'center', marginHorizontal: 9 }}>
-                    <Text style={{ fontSize: 17, textAlign: 'center', color:"black" }}>Ogbomoso South Local Government, Oyo State, Ogbomoso</Text>
+                    <Text style={{ fontSize: 17, textAlign: 'center', color:"black",  opacity:0.6 }}>Ogbomoso South Local Government, Oyo State, Ogbomoso</Text>
 
-                    <Text style={{ fontSize: 16, color: '#000' }}>Email: info@BSA.gov.ng</Text>
+                    <Text style={{ fontSize: 16, color: '#000',  opacity:0.6 }}>Email: info@BSA.gov.ng</Text>
 
-                    <Text style={{ fontSize: 16, color: '#000' }}>+234 706 181 3135</Text>
+                    <Text style={{ fontSize: 16, color: '#000',  opacity:0.6 }}>+234 706 181 3135</Text>
 
-                    <Text style={{ fontSize: 16, color: '#000' }}>+234 905 764 1515</Text>
+                    <Text style={{ fontSize: 16, color: '#000',  opacity:0.6 }}>+234 905 764 1515</Text>
 
 
                 </View>
@@ -156,7 +156,10 @@ export default function Index({navigation}) {
                         <TouchableOpacity><Image source={require("../../assets/icons/twitter.png")} style={{ marginRight: 10, width: 30, height: 30 }} /></TouchableOpacity>
                         <TouchableOpacity><Image source={require("../../assets/icons/gmail.png")} style={{ marginRight: 10, width: 30, height: 30 }} /></TouchableOpacity>
                         <TouchableOpacity><Image source={require("../../assets/icons/instagram.png")} style={{ marginRight: 10, width: 30, height: 30 }} /></TouchableOpacity>
+
+                        
                     </View>
+
                 </View>
             </View>
             {/* End Contact OSOPADEC */}
@@ -233,7 +236,7 @@ const styles = StyleSheet.create({
         paddingHorizontal: 10,
         fontSize: 15,
         color:'#000000',
-        opacity:0.8,
+        opacity:0.6,
         // color: '#d47400'
     }
 });
