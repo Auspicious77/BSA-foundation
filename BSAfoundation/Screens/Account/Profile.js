@@ -6,7 +6,7 @@ export default function Profile({navigation}) {
     <View style={styles.container}>
 
       <View style={styles.image}>
-        <Image source={require('../../assets/images/OSP_4.jpg')}
+        <Image source={require('../../assets/images/gps.jpg')}
           style={{ width: 120, height: 120, borderRadius: 100 }} />
 
       </View>
