@@ -33,18 +33,19 @@ export default function Administration() {
     const [selectedId, setSelectedId] = useState(null);
 
     const renderItem = ({ item }) => {
-        // const backgroundColor = item.id === selectedId ? "#6e3b6e" : "#f9c2ff";
-        // const color = item.id === selectedId ? 'white' : 'black';
 
         return (
-            <View style={{marginHorizontal:5}}>
+            <View style={{marginHorizontal:5,alignContent:"center"  }}>
+                <View >
                 <Image source={item.img}
-                style={{width:150,height:150}}
+                style={{width:"100%",height:500, marginTop:-30,}}
+                resizeMode="contain"
                 />
-                <Text style={{width:150, color:"black"}}>{item.name}</Text>
+                </View>
+                <Text style={{ color:"#000000", textAlign:"center", fontWeight:"bold", fontSize:25, marginTop:-30}}>{item.name}</Text>
             <Text style={styles.post}>{item.post}</Text>
-            <Text>{item.phone}</Text>
-            <Text style={{width:150}}>{item.qualification}</Text>
+            <Text style={{ color:"#000000", textAlign:"center"}}>{item.phone}</Text>
+            {/* <Text style={{ color:"#000000", textAlign:"center", fontWeight:"bold", fontSize:25, marginTop:-30}}>{item.qualification}</Text> */}
             </View>
             // <Item
             //     item={item}
@@ -98,7 +99,11 @@ const styles = StyleSheet.create({
         color:'#000'
     },
     post: {
-        color:"black"
+
+        color:"#000000",
+        textAlign:"center",
+        fontSize:20
+
     }
    
    
