@@ -7,16 +7,16 @@ const DATA = [
         id: 1,
         img: images.official3, 
         name:'Sunday Adeyemo Jeremiah',
-        post: 'Director',
+        post: 'Chairman',
         phone: '+234 803 000 0000',
         // qualification: 'OND (Banking & Finance), ACIB, M. Sc., CEMAP, FCIFCN, MISMN, CPA'
     },
     {
-        // id: 2,
-        // img: images.profile2,
-        // name:'Dr. Victor Koledoye',
-        // post: 'Executive Secretary',
-        // phone: '+234 803 000 0000',
+        id: 2,
+        img: images.profile2,
+        name:'Dr. Victor Koledoye',
+        post: 'Executive Secretary',
+        phone: '+234 803 000 0000',
         // qualification: 'MPA(Singapore), MBBS(Ibadan), MWACP(Lab. Medicine), Dip. Occ. Health (Illinois, Chicago)'
     }, 
     
@@ -38,16 +38,13 @@ export default function Administration() {
 
         return (
             <View style={{marginHorizontal:5}}>
-                <View>
                 <Image source={item.img}
-                style={{width:350,height:500, marginTop:-30}}
-                resizeMode="contain"
+                style={{width:150,height:150}}
                 />
-                </View>
-                <Text style={{ color:"black", textAlign:"center", fontWeight:"bold", fontSize:25, marginTop:-30}}>{item.name}</Text>
+                <Text style={{width:150, color:"black"}}>{item.name}</Text>
             <Text style={styles.post}>{item.post}</Text>
             <Text>{item.phone}</Text>
-            <Text style={{width:150,}}>{item.qualification}</Text>
+            <Text style={{width:150}}>{item.qualification}</Text>
             </View>
             // <Item
             //     item={item}
@@ -61,7 +58,7 @@ export default function Administration() {
     return (
         <ScrollView style={styles.container}>
             <View style={{alignItems:"center"}}>
-            {/* <Text style={styles.board}>BOARD DIRECTOR</Text> */}
+            <Text style={styles.board}>BOARD DIRECTORS</Text>
 
         <FlatList
             data={DATA}
@@ -101,9 +98,7 @@ const styles = StyleSheet.create({
         color:'#000'
     },
     post: {
-        color:"black",
-        textAlign:"center",
-        fontSize:20
+        color:"black"
     }
    
    

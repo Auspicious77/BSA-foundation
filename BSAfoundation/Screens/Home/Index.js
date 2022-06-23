@@ -161,8 +161,6 @@ export default function Index({navigation}) {
             </View>
             {/* End Contact OSOPADEC */}
 
-            <Text style={{color:"black", textAlign:"center"}}>copyright 2022. All right reserved</Text>
-
 
             
         </ScrollView>

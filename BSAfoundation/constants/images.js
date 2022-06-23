@@ -20,18 +20,17 @@ export const ilajepictures_5 = require("../assets/images/sk12.jpg");
 export const ilajepictures_5a = require("../assets/images/sk15.jpg");
 export const ilajepictures_5b = require("../assets/images/skill7.jpg");
 export const ilajepictures_6 = require("../assets/images/compiled.jpg");
-// export const ilajepictures_7 = require("../assets/images/ilajepictures_7.jpg");
-// export const bannerbg = require("../assets/images/banner_bg.jpg");
-// export const official1 = require("../assets/images/official1.jpg");
-// export const official2 = require("../assets/images/official2.jpg");
+export const bannerbg = require("../assets/images/banner_bg.jpg");
+export const official1 = require("../assets/images/official1.jpg");
+export const official2 = require("../assets/images/official2.jpg");
 export const official3 = require("../assets/images/face2.jpg");
 export const a1 = require("../assets/images/bake.jpg");
 export const a2 = require("../assets/images/tie1.jpg");
 export const a3 = require("../assets/images/tailor1.jpg");
-export const a4 = require("../assets/images/shoe.jpg");
+export const a4 = require("../assets/images/soft2.jpg");
 export const a5 = require("../assets/images/barb2.jpg");
 export const a6 = require("../assets/images/hair.jpg");
-export const a7 = require("../assets/images/bag2.jpg");
+export const a7 = require("../assets/images/data.jpg");
 export const a8 = require("../assets/images/garment.jpg");
 
 
@@ -46,13 +45,11 @@ export default {
     digitalmarketing
     ,mobile,
     graphics,
-    // official1,
-    // official2,
+    official1,
+    official2,
     official3,
-    // account,
-    // adminsupplies,
-    // budget,
-    // community,
+    budget,
+    community,
     ilajepictures_1,
     ilajepictures_2,
     ilajepictures_3,
