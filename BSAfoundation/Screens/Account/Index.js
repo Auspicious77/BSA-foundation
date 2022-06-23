@@ -52,7 +52,7 @@ export default function Index({navigation}) {
         <Text style={{color:"#000000"}}>{item.title}</Text>
 
    
-43a3ffaf6e36121657f1df755e8ea39c46153bf4
+
 
       </View>
     </TouchableOpacity>
