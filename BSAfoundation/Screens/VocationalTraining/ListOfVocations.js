@@ -1,7 +1,7 @@
 
 
 import React, { useState } from "react";
-import { FlatList, SafeAreaView, StatusBar, StyleSheet, Text, TouchableOpacity, View, ScrollView, Image } from "react-native";
+import { FlatList, SafeAreaView, StatusBar, StyleSheet, Text, TouchableOpacity, View, ScrollView, Image, Alert } from "react-native";
 import images from '../../constants/images'
 
 const DATA = [
@@ -30,7 +30,7 @@ const DATA = [
     }, {
         id: 4,
         img: images.a4,
-        name: 'Software Engineering',
+        name: 'Bag Making',
         post: 'Akure, Ondo State',
         phone: '+234 803 000 0000',
         qualification: 'LLB, BL, aicmc.'
@@ -52,7 +52,7 @@ const DATA = [
     }, {
         id: 7,
         img: images.a7,
-        name: 'Data Science',
+        name: 'Furniture',
         post: 'Akure, Ondo State',
         phone: '+234 803 000 0000',
         qualification: 'B.A (Hons.) MIPR., LLB, BL,LLM'
@@ -69,14 +69,15 @@ const DATA = [
 
 
 
-export default function ListOfVocations() {
+export default function ListOfVocations({navigation}) {
     const [selectedId, setSelectedId] = useState(null);
 
     const renderItem = ({ item }) => {
 
 
         return (
-            <TouchableOpacity style={{ marginHorizontal: 5 }}>
+            <TouchableOpacity style={{ marginHorizontal: 5 }}
+           >
                 <Image source={item.img}
                     style={{ width: 150, height: 150 }}
                 />

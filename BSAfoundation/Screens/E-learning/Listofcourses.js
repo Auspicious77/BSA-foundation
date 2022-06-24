@@ -114,7 +114,7 @@ export default function Listofcourses({ navigation, }) {
   const renderItem = ({ item }) => {
     console.log(item)
     return (
-      <TouchableOpacity  onPress={()=>navigation.navigate(item.url, {data: item})}>
+      <TouchableOpacity >
         <View style={styles.card}>
           <Image source={item.img}
             style={ {width: '100%',
@@ -160,7 +160,9 @@ color:"#000000"
 },
 
 container:{
-  marginHorizontal:20
+  marginHorizontal:20,
+  marginBottom:30,
+  flex:1,
 },
 card:{
   elevation:9,
@@ -168,6 +170,8 @@ card:{
   height:150 ,
   borderRadius:10,
   marginTop:30,
+  marginBottom:35,
+  
 }
 })
 

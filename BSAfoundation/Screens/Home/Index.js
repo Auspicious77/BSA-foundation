@@ -6,7 +6,8 @@ import {
     TouchableOpacity,
     ScrollView,
     Image,
-    FlatList
+    FlatList,
+    Linking
 } from 'react-native';
 import { SliderBox } from 'react-native-image-slider-box';
 
@@ -97,7 +98,7 @@ export default function Index({navigation}) {
                 <TouchableOpacity style={styles.Button}>
                     <Text style={styles.About}>What We Do</Text>
                 </TouchableOpacity>
-                <Text style={styles.Ondo}>We Are Providing a leverage for Sustainable Development Goals and foster Community Economic Development Initiatives within mandate communities the Commission facilitates, executes and implements strategic Programmes and Projects such as...</Text>
+                <Text style={styles.Ondo}> We raise young men and women to be responsible and productive in their respective endeavours</Text>
                 <TouchableOpacity
                     style={styles.ButtonS}
                     onPress={() => navigation.navigate('Whatwedo')}>
@@ -126,18 +127,18 @@ export default function Index({navigation}) {
             
 
             {/* Contact OSOPADEC */}
-            <View style={styles.background}>
+            <View style={styles.background} >
                 <TouchableOpacity style={styles.Button} onPress={() => navigation.navigate('ContactUs')}>
                     <Text style={styles.About}>Contact BSA</Text>
                 </TouchableOpacity>
                 <View style={{ flexDirection: 'column', alignItems: 'center', marginHorizontal: 9 }}>
                     <Text style={{ fontSize: 17, textAlign: 'center', color:"black",  opacity:0.6 }}>Ogbomoso South Local Government, Oyo State, Ogbomoso</Text>
 
-                    <Text style={{ fontSize: 16, color: '#000',  opacity:0.6 }}>Email: info@BSA.gov.ng</Text>
+                    {/* <Text style={{ fontSize: 16, color: '#000',  opacity:0.6 }}>Email: info@BSA.gov.ng</Text> */}
 
-                    <Text style={{ fontSize: 16, color: '#000',  opacity:0.6 }}>+234 706 181 3135</Text>
+                    <Text style={{ fontSize: 16, color: '#000',  opacity:0.6 }}>+234 000 000 0000</Text>
 
-                    <Text style={{ fontSize: 16, color: '#000',  opacity:0.6 }}>+234 905 764 1515</Text>
+                    <Text style={{ fontSize: 16, color: '#000',  opacity:0.6 }}>+234 000 000 0000</Text>
 
 
                 </View>
@@ -152,10 +153,10 @@ export default function Index({navigation}) {
                         <Text style={styles.About}>Follow Us:</Text>
                     </TouchableOpacity>
                     <View style={{ flexDirection: 'row' }}>
-                        <TouchableOpacity><Image source={require("../../assets/icons/facebook.png")} style={{ marginRight: 10, width: 30, height: 30 }} /></TouchableOpacity>
+                        <TouchableOpacity onPress={()=>Linking.openURL('https://facebook.com/bodasundayfoundation/?_rdc=1&_rdr')}><Image source={require("../../assets/icons/facebook.png")} style={{ marginRight: 10, width: 30, height: 30 }} /></TouchableOpacity>
                         <TouchableOpacity><Image source={require("../../assets/icons/twitter.png")} style={{ marginRight: 10, width: 30, height: 30 }} /></TouchableOpacity>
-                        <TouchableOpacity><Image source={require("../../assets/icons/gmail.png")} style={{ marginRight: 10, width: 30, height: 30 }} /></TouchableOpacity>
-                        <TouchableOpacity><Image source={require("../../assets/icons/instagram.png")} style={{ marginRight: 10, width: 30, height: 30 }} /></TouchableOpacity>
+                        <TouchableOpacity onPress={()=> Linking.openURL('mailto:bodasundayfoundation@gmail.com?subject=SendMail&body=Description') }><Image source={require("../../assets/icons/gmail.png")} style={{ marginRight: 10, width: 30, height: 30 }} /></TouchableOpacity>
+                        <TouchableOpacity   onPress={()=>Linking.openURL('https://www.instagram.com/officialbsafoundation')}><Image source={require("../../assets/icons/instagram.png")} style={{ marginRight: 10, width: 30, height: 30 }} /></TouchableOpacity>
 
                         
                     </View>
