@@ -10,9 +10,11 @@ export const seed = require("../assets/icons/seed.png");
 export const downArrow = require("../assets/icons/down-arrow.png");
 export const back = require("../assets/icons/back.png");
 export const About = require("../assets/icons/About.png");
+export const Whatsapp = require("../assets/icons/whatsap.png");
 
 export default {
     About,
+    Whatsapp,
     address,
     elearning,
     home,

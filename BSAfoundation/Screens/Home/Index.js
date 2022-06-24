@@ -162,7 +162,8 @@ export default function Index({navigation}) {
                         <TouchableOpacity><Image source={require("../../assets/icons/twitter.png")} style={{ marginRight: 10, width: 30, height: 30 }} /></TouchableOpacity>
                         <TouchableOpacity onPress={()=> Linking.openURL('mailto:bodasundayfoundation@gmail.com?subject=SendMail&body=Description') }><Image source={require("../../assets/icons/gmail.png")} style={{ marginRight: 10, width: 30, height: 30 }} /></TouchableOpacity>
                         <TouchableOpacity   onPress={()=>Linking.openURL('https://www.instagram.com/officialbsafoundation')}><Image source={require("../../assets/icons/instagram.png")} style={{ marginRight: 10, width: 30, height: 30 }} /></TouchableOpacity>
-
+                        <TouchableOpacity   onPress={()=>Linking.openURL('whatsapp://send?text=I am ___from__ &phone=+2340816938804')}><Image source={require("../../assets/icons/whatsap.png")} style={{ marginRight: 10, width: 30, height: 30 }} /></TouchableOpacity>
+                        
                         
                     </View>
 
