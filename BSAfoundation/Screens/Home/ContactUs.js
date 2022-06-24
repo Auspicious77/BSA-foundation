@@ -7,7 +7,8 @@ import {
     ScrollView,
     Image,
     FlatList,
-    TextInput
+    TextInput,
+    Linking
 } from 'react-native';
 import { COLORS } from '../../constants';
 export default function ContactUs() {
@@ -47,10 +48,11 @@ export default function ContactUs() {
                         <Text style={styles.About}>Follow Us:</Text>
                     </TouchableOpacity>
                     <View style={{ flexDirection: 'row' }}>
-                        <TouchableOpacity><Image source={require("../../assets/icons/facebook.png")} style={{ marginRight: 10, width: 30, height: 30 }} /></TouchableOpacity>
+                        <TouchableOpacity onPress={()=>Linking.openURL('https://facebook.com/bodasundayfoundation/?_rdc=1&_rdr')}><Image source={require("../../assets/icons/facebook.png")} style={{ marginRight: 10, width: 30, height: 30 }} /></TouchableOpacity>
                         <TouchableOpacity><Image source={require("../../assets/icons/twitter.png")} style={{ marginRight: 10, width: 30, height: 30 }} /></TouchableOpacity>
-                        <TouchableOpacity><Image source={require("../../assets/icons/gmail.png")} style={{ marginRight: 10, width: 30, height: 30 }} /></TouchableOpacity>
-                        <TouchableOpacity><Image source={require("../../assets/icons/instagram.png")} style={{ marginRight: 10, width: 30, height: 30 }} /></TouchableOpacity>
+                        <TouchableOpacity onPress={()=> Linking.openURL('mailto:bodasundayfoundation@gmail.com?subject=SendMail&body=Description') }><Image source={require("../../assets/icons/gmail.png")} style={{ marginRight: 10, width: 30, height: 30 }} /></TouchableOpacity>
+                        <TouchableOpacity   onPress={()=>Linking.openURL('https://www.instagram.com/officialbsafoundation')}><Image source={require("../../assets/icons/instagram.png")} style={{ marginRight: 10, width: 30, height: 30 }} /></TouchableOpacity>
+
                         
                     </View>
                 </View>
@@ -65,6 +67,7 @@ export default function ContactUs() {
                     value={FullName}
                     placeholder="Full-Name"
                     keyboardType="default"
+                    placeholderTextColor="#808080"
                 />
             </View>
 
@@ -75,6 +78,8 @@ export default function ContactUs() {
                     value={Email}
                     placeholder="youremail@gmail.com"
                     keyboardType="email-address"
+                    placeholderTextColor="#808080"
+                    
                 />
             </View>
 
@@ -85,6 +90,7 @@ export default function ContactUs() {
                     value={Subject}
                     placeholder="Subject"
                     keyboardType="default"
+                    placeholderTextColor="#808080"
                 />
             </View>
 
@@ -98,6 +104,7 @@ export default function ContactUs() {
                     value={Message}
                     placeholder="Enter Your Message Here..."
                     keyboardType="default"
+                    placeholderTextColor="#808080"
                 />
             </View>
 
@@ -146,7 +153,8 @@ const styles = StyleSheet.create({
         borderWidth: 1,
         padding: 10,
         borderColor: '#999cff',
-        borderRadius: 5
+        borderRadius: 5,
+        color:"#000000"
     }, 
     input1: {
         height: 80,
@@ -154,7 +162,8 @@ const styles = StyleSheet.create({
         borderWidth: 1,
         padding: 10,
         borderColor: '#999cff',
-        borderRadius: 5
+        borderRadius: 5,
+        color:"#000000",
     },
 
 

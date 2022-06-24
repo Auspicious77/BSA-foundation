@@ -77,7 +77,16 @@ export default function ListOfVocations({navigation}) {
 
         return (
             <TouchableOpacity style={{ marginHorizontal: 5 }}
-           >
+            onPress={()=>
+                {
+              Alert.alert("Congratulations!",'you have picked a skill',[
+                {text: "ok",
+                onPress: ()=>navigation.navigate("index")},
+              
+                
+              ]);
+                }
+                      }>
                 <Image source={item.img}
                     style={{ width: 150, height: 150 }}
                 />

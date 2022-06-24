@@ -136,9 +136,14 @@ export default function Index({navigation}) {
 
                     {/* <Text style={{ fontSize: 16, color: '#000',  opacity:0.6 }}>Email: info@BSA.gov.ng</Text> */}
 
-                    <Text style={{ fontSize: 16, color: '#000',  opacity:0.6 }}>+234 000 000 0000</Text>
+                    <Text style={{ fontSize: 16, color: '#000',  opacity:0.6 }}
+                    onPress={() => {
+                        Linking.openURL('tel:+234 816938804')
+                       
+                        
+                        }}>+234 8169388041</Text>
 
-                    <Text style={{ fontSize: 16, color: '#000',  opacity:0.6 }}>+234 000 000 0000</Text>
+                   
 
 
                 </View>
