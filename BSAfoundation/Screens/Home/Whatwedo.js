@@ -33,7 +33,7 @@ export default function Whatwedo() {
                 <View style={styles.ImageText}>
                     <Image source={require('../../assets/images/education.png')} style={{ width: 100, height: 100 }} />
                     <Text style={styles.Title}>Educational Programmes</Text>
-                    <Text style={styles.text}>The Foundation continually seeks to improve access and quality of education of mandate communities by executing programs to further strengthen and increase the teaching workforce, improve teacher education and educational systems with a focus on learning, teaching, school management, parental participation and responsiveness to children’s needs.
+                    <Text style={styles.text5}>The Foundation continually seeks to improve access and quality of education of mandate communities by executing programs to further strengthen and increase the teaching workforce, improve teacher education and educational systems with a focus on learning, teaching, school management, parental participation and responsiveness to children’s needs.
 
                         The Foundation also sponsors bursary and scholarship programmes and facilitates formal, non-formal and vocational training.</Text>
                 </View>
@@ -42,7 +42,7 @@ export default function Whatwedo() {
                 <View style={styles.ImageText}>
                     <Image source={require('../../assets/images/community.png')} style={{ width: 100, height: 100 }} />
                     <Text style={styles.Title}>Community Development</Text>
-                    <Text style={styles.text}>The Foundation provides a platform for Community Economic Development Initiatives that are driven towards tackling issues like unemployment, poverty, job loss, environmental degradation, crisis thereby increasing opportunities for communities who are disadvantaged and enhancing the economic, social, ecological and cultural well-being of these communities.
+                    <Text style={styles.text5}>The Foundation provides a platform for Community Economic Development Initiatives that are driven towards tackling issues like unemployment, poverty, job loss, environmental degradation, crisis thereby increasing opportunities for communities who are disadvantaged and enhancing the economic, social, ecological and cultural well-being of these communities.
 
                         These development initiatives cut across agricultural programs, civil projects, humanitarian programs, environmental support projects etc.</Text>
                 </View>
@@ -52,7 +52,7 @@ export default function Whatwedo() {
                 <View style={styles.ImageText}>
                     <Image source={require('../../assets/images/health.png')} style={{ width: 100, height: 100 }} />
                     <Text style={styles.Title}>Health Care</Text>
-                    <Text style={styles.text}>The Foundation facilitates healthcare and social services to the underprivileged, physically challenged, aged, abused and the most vulnerable in the mandate communities.
+                    <Text style={styles.text5}>The Foundation facilitates healthcare and social services to the underprivileged, physically challenged, aged, abused and the most vulnerable in the mandate communities.
 
                         The Foundation promotes health care services for pregnant/vulnerable women and children in the communities and create more awareness and sensitization on the prevention of diseases.
                     </Text>
@@ -73,6 +73,14 @@ const styles = StyleSheet.create({
         color:"black",
         opacity:0.5
     },
+    text5: {
+        justifyContent: 'center',
+        fontSize: 17,
+        color:"black",
+        opacity:0.5,
+        textAlign: 'center'
+
+    },
     ImageText: {
         alignItems: 'center',
         backgroundColor: '#fff',
@@ -91,15 +99,16 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         fontSize: 17,
         color:"black",
-        opacity:0.6,
-        textAlign:"center"
+        textAlign:"center",
+        fontWeight: '700'
     },
     para:{
         alignItems: 'center',
         fontSize: 17,
         color:"black",
         opacity:0.6,
-        textAlign:"left"
+        textAlign:"left",
+       
     },
 
    
