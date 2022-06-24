@@ -1,15 +1,20 @@
 import React, { useState, useRef } from 'react'
 import { TextInput } from 'react-native-paper';
-import { ScrollView, Text,StyleSheet, View } from 'react-native';
+import { ScrollView, Text,StyleSheet, View, Alert } from 'react-native';
 import { Picker } from '@react-native-picker/picker';
 import ImagePicker from "react-native-customized-image-picker";
 import { TouchableOpacity } from 'react-native-gesture-handler';
 import { COLORS } from '../../constants';
 
-export default function AboutVocation() {
+export default function AboutVocation({navigation}) {
 
   const [text, setText] = React.useState("");
-  const [selectedLanguage, setSelectedLanguage] = useState();
+  const [selectedLanguage, setSelectedLanguage] = useState({
+    value1:"",
+    value2:"",
+    value3:"",
+    value4:"",
+  });
   const pickerRef = useRef();
 
   const choosePhotoFromLibrary = () => {
@@ -42,63 +47,63 @@ export default function AboutVocation() {
       <Picker
         style={styles.picker}
         ref={pickerRef}
-        selectedValue={selectedLanguage}
-        onValueChange={(itemValue, itemIndex) =>
-          setSelectedLanguage(itemIndex = {itemValue})
-        }>
-        <Picker.Item label="Name Of Vocation"  />
-        <Picker.Item label="Hairdressing" />  
-        <Picker.Item label="Shoe Making" />
-        <Picker.Item label="Hairdressing" />
-        <Picker.Item label="Web Development"/>
-        <Picker.Item label="App Development"/>
-        <Picker.Item label="Data Science"/>
-        <Picker.Item label="UI/UX Designing"/>
-        <Picker.Item label="Fashion Desiging"/>
-        <Picker.Item label="Baking and decoration"/>
-        <Picker.Item label="Tie and Die" />
-        <Picker.Item label="Barbing"/>
+        selectedValue={selectedLanguage.value1}
+        onValueChange={(itemValue) =>
+            setSelectedLanguage({...selectedLanguage, value1: itemValue}) 
+          }>
+        <Picker.Item label="Name Of Vocation" value={""}  />
+        <Picker.Item label="Hairdressing" value={"hairdresing"} />  
+        <Picker.Item label="Shoe Making" value={"shoe"} />
+        <Picker.Item label="Hairdressing" value={"Hairdressing"} />
+        <Picker.Item label="Web Development"value={"Web development"}/>
+        <Picker.Item label="App Development" value={"App development"}/>
+        <Picker.Item label="Data Science" value={"Data science"}/>
+        <Picker.Item label="UI/UX Designing" value={"UI/Ux Designing"}/>
+        <Picker.Item label="Fashion Desiging" value={"Fashion Desiging"}/>
+        <Picker.Item label="Baking and decoration" value={"Baking and decoration"}/>
+        <Picker.Item label="Tie and Die" value={"Tie and Die"} />
+        <Picker.Item label="Barbing" value={"Barbing"}/>
       </Picker>
 
       <Picker
         style={styles.picker}
         ref={pickerRef}
-        selectedValue={selectedLanguage}
-        onValueChange={(itemValue, itemIndex) =>
-          setSelectedLanguage(itemValue = {itemIndex})
+        selectedValue={selectedLanguage.value2}
+        onValueChange={(itemValue) =>
+          setSelectedLanguage({...selectedLanguage, value2: itemValue}) 
         }>
-        <Picker.Item label="Categories"  />
-        <Picker.Item label="Baking"  />  
-        <Picker.Item label="Shoe Making"  />
-        <Picker.Item label="Hairdressing"  />
-        <Picker.Item label="Fashion Designing"/>
-        <Picker.Item label="Technology"/>
+        <Picker.Item label="Categories" value={""} />
+        <Picker.Item label="Baking" value={"Baking"}  />  
+        <Picker.Item label="Shoe Making" value={"Shoe Making"}  />
+        <Picker.Item label="Hairdressing" value={"Hairdressing"}  />
+        <Picker.Item label="Fashion Designing" value={"Fashion Designing"}/>
+        <Picker.Item label="Technology" value={"Technology"}/>
       </Picker>
 
       <Picker
         style={styles.picker}
         ref={pickerRef}
-        selectedValue={selectedLanguage}
-        onValueChange={(itemValue, itemIndex) =>
-          setSelectedLanguage(itemValue)
+        selectedValue={selectedLanguage.value3}
+        onValueChange={(itemValue) =>
+          setSelectedLanguage({...selectedLanguage, value3: itemValue}) 
         }>
-        <Picker.Item label="Years Of Experience"  />
-        <Picker.Item label="1 - 2yrs" />  
-        <Picker.Item label=" 2 - 3yrs"  />
-        <Picker.Item label="3 - 5yrs"  />
+        <Picker.Item label="Years Of Experience" value={""} />
+        <Picker.Item label="1 - 2yrs" value={"1 - 2yrs"} />  
+        <Picker.Item label=" 2 - 3yrs" value={"2-3 years"} />
+        <Picker.Item label="3 - 5yrs" value={'3-5 years'} />
       </Picker>
 
       <Picker
         style={styles.picker}
         ref={pickerRef}
-        selectedValue={selectedLanguage}
-        onValueChange={(itemValue, itemIndex) =>
-          setSelectedLanguage(itemValue)
+        selectedValue={selectedLanguage.value4}
+        onValueChange={(itemValue) =>
+          setSelectedLanguage({...selectedLanguage, value4: itemValue}) 
         }>
-        <Picker.Item label="Range For Funding"  />
-        <Picker.Item label="10,000 - 50,000"  />  
-        <Picker.Item label="50,000 - 100,000"  />
-        <Picker.Item label="100,000 - 200,000"  />
+        <Picker.Item label="Range For Funding"  value={""} />
+        <Picker.Item label="10,000 - 50,000" value={"10,000 - 50,000"} />  
+        <Picker.Item label="50,000 - 100,000" value={"50,000 - 100,000"}  />
+        <Picker.Item label="100,000 - 200,000" value={"100,000 - 200,000"}  />
       </Picker>
 
       <Text style={{textAlign:'center',fontWeight:'bold', color:"black"}}>
@@ -107,6 +112,18 @@ export default function AboutVocation() {
 
 
       <TouchableOpacity style={styles.loginButton}
+      onPress={()=>
+        {
+      Alert.alert("Congratulations!","Your application was recieved successfully",[
+        {text: "ok",
+        onPress: ()=>navigation.navigate("index")},
+        {text: "cancel",
+        onPress: ()=>navigation.navigate("AboutVocation")}
+        
+      ]);
+        }
+              }
+     
      >
         <View>
           <Text style={styles.logintext}>SUBMIT</Text>

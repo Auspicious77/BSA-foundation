@@ -78,6 +78,7 @@ export default function HomeStack() {
           headerStyle: { backgroundColor: '#4266f5',
         
         },
+       title:"What We do "
         }}
       />
 
